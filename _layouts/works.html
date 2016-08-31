@@ -7,9 +7,10 @@
 		</div>
 
 		<div class="works">
-			{% for work in site.works %}
-				<article class="work-item animated slideInUp COLOUR">
-					<div class="image"></div>
+			{% assign works = (site.works | sort: 'date') | reverse %}
+			{% for work in works %}
+				<article class="work-item animated slideInUp purple">
+					<div class="image"><img src="http://placehold.it/500/500" alt=""></div>
   					<a href="{{ work.url }}" class="caption">
   						<div>
   							<h3>{{ work.title | escape }}</h3>
