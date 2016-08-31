@@ -1,0 +1,166 @@
+---
+---
+
+@import 'var/colors';
+@import 'libraries/normalize';
+$max-width-outer: 1100px;
+$max-width-inner: 860px;
+$font-family: 'Quicksand', sans-serif;
+$font-family-header: 'Playfair Display', serif;
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	min-height: 100%;
+	font-size: 62.5%;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	min-height: 100%;
+	padding: 160px 15px 15px;
+	font-family: $font-family;
+
+    @media (min-width: 768px) {
+		padding-top: 140px;
+	}
+}
+
+.screen-reader-text {
+	display: none;
+}
+
+%container {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 10px;
+	max-width: $max-width-outer;
+}
+
+.container {
+	@extend %container;
+}
+
+$green: #C6D5D2;
+$purple: #CBC6D5;
+$orange: #D5C6C9;
+
+/* Libraries */
+@import 'libraries/animate';
+
+@import 'layout/typography';
+@import 'layout/header';
+
+@import 'pages/home';
+@import 'pages/single-work';
+
+.work {
+	.content {
+		max-width: 720px;
+	}
+
+	p:first-of-type {
+		font-size: 2rem;
+		line-height: 3.4rem;
+		margin-bottom: 40px;
+	}
+}
+
+.works {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.work-item {
+	margin-bottom: 30px;
+	width: 48%;
+	position: relative;
+
+	img {
+		max-width: 100%;
+		height: auto;
+		margin-bottom: 0;
+		transition: .4s all ease-in-out;
+		border: 0;
+		box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.3);
+	}
+
+	.image {
+		padding: 40px;
+		margin-bottom: 15px;
+		background: #ddd;
+		overflow: hidden;
+	}
+
+	&:hover {
+		.image img {
+			transform: scale(1.05);
+		}
+
+		.caption {
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+
+	.caption {
+		position: absolute;
+		top: 0;
+		bottom: 15px;
+		transition: .4s all ease-in-out;
+		left: 0;
+		right: 0;
+		background-color: rgba(0,0,0,0.8);
+		opacity: 0;
+		visibility: hidden;
+		color: white;
+
+		div {
+			text-align: center;
+			width: 100%;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			font-size: 19px;
+		}
+
+		b {
+			display: block;
+		}
+
+		span {
+			font-size: 16px;
+			margin-top: 5px;
+		}
+
+		span:after {
+			content: ', ';
+		}
+
+		span:last-child:after {
+			content: '';
+		}
+	}
+
+	&.green .image {
+		background-color: $green;
+	}
+
+	&.purple .image {
+		background-color: $purple;
+	}
+
+	&.orange .image {
+		background-color: $orange;
+	}
+}
+
+.footer {
+	@extend %container;
+	margin-top: 50px;
+}
