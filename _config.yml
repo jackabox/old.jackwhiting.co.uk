@@ -1,6 +1,12 @@
----
 title: Jack Whiting
-timezone: UTC
+timezone: GMT
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://jackabox.github.io/jackwhiting.co.uk" # the base hostname & protocol for your site
+twitter_username: jackabox
+github_username:  jackabox
+
+# Build settings
+markdown: kramdown
 collections:
   posts:
     title: Posts
@@ -8,13 +14,11 @@ collections:
   uploads:
     title: Uploads
     output: true
+  works:
+    title: Works
+    output: true
 email: hi@jackwhiting.co.uk
 description: |
   Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-baseurl: ''
-url: http://jackwhiting.dev
-twitter_username: jackabox
-github_username: jackabox
-markdown: kramdown
 sass:
   style: compressed

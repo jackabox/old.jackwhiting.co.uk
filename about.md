@@ -1,7 +1,13 @@
 ---
+<<<<<<< HEAD
+layout: page
+title: About
+permalink: /about/
+=======
 title: About
 permalink: "/about/"
 layout: page
+>>>>>>> d61f1b2af030668949ceb12c0019c4a83808b25b
 ---
 
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
