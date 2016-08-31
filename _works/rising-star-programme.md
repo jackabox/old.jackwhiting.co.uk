@@ -1,7 +1,7 @@
 ---
 title: Rising Star Programme
+date: 2015-07-29 00:00:00 Z
 layout: works-single
-date: 2015-07-29
 link: http://risingstarprogramme.com
 color: orange
 imageThumb: risingstar-thumb.jpg
