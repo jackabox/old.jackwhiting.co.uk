@@ -1,0 +1,41 @@
+{% include header.html %}
+
+	<div class="single container">
+		<div class="content">
+			<h1 class="work-title">{{ page.title }}</h1>
+
+			<div class="work-single">
+				<div class="work-single__description">
+					{{ content }}
+				</div>
+				<div class="work-single__meta">
+					<h4>Project Date:</h4>
+					<!-- <p><?php the_date(); ?></p> -->
+					<p>{{ page.date | date: "%b %-d, %Y" }}</p>
+
+					<h4>Project Type:</h4>
+					<p>
+						{% for category in page.categories %}
+							<span>{{ category }}</span>
+						{% endfor %}
+					</p>
+					
+					{% if page.link != null %}
+						<h4>Link:</h4>
+						<p><a href="{{ page.link }}" title="Link to {{ page.title }}">View Online</a></p>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	{% if page.imageThumb != '' %}
+	<div class="work-images work-images--{{ page.color }}">
+    	<img src="/assets/works/{{ page.imageThumb }}" alt="{{ page.title }}">
+	</div>
+	{% endif %}
+
+
+
+{% include footer.html %}
