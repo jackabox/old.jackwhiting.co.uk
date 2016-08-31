@@ -1,13 +1,6 @@
 ---
-<<<<<<< HEAD
-layout: post
-title:  "Welcome to Jekyll!"
-date:   2016-08-30 21:57:55 +0100
-categories: jekyll update
----
-=======
 title: Welcome to Jekyll!
-date: 2016-08-30 20:57:55 Z
+date: 2016-08-30 20:57:55
 categories:
 - jekyll
 - update

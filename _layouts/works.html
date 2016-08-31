@@ -1,0 +1,26 @@
+{% include header.html %}
+
+	<div class="work container">
+		<div class="content">
+			<h1>Works</h1>
+			<p class="first">Here are a few selected pieces I've worked on over the years. Click on one to read a little bit more about it and the process I was involved in.</p>
+		</div>
+
+		<div class="works">
+			{% for work in site.works %}
+				<article class="work-item animated slideInUp COLOUR">
+					<div class="image"></div>
+  					<a href="{{ work.url }}" class="caption">
+  						<div>
+  							<h3>{{ work.title | escape }}</h3>
+  							{% for category in work.categories %}
+  								<span>{{ category }}</span>
+  							{% endfor %}
+  						</div>
+  					</a>
+  				</article>
+			{% endfor %}
+		</div>
+	</div>
+
+{% include footer.html %}

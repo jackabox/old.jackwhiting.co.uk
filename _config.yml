@@ -1,7 +1,7 @@
 title: Jack Whiting
 timezone: GMT
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://jackabox.github.io/jackwhiting.co.uk" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
 twitter_username: jackabox
 github_username:  jackabox
 
