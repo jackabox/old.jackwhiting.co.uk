@@ -1,0 +1,143 @@
+$header-height: 80px;
+
+.header {
+    background-color: #fefefe;
+    left: 0;
+    padding: 30px 15px 20px;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    	box-shadow: 0 0 2px 2px #f7f7f7;
+
+    &.scrolled {
+    }
+
+    @media (min-width: 768px) {
+        padding: 0;
+    }
+}
+
+.header__wrap {
+
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    h1,
+    li {
+        font-family: $font-family;
+        line-height: 1;
+        @media (min-width: 768px) {
+            line-height: $header-height;
+        }
+    }
+
+    .logo {
+        margin-bottom: 20px;
+        width: 100%;
+        
+        @media (min-width: 768px) {
+            margin-bottom: 0;
+            text-align: left;
+            width: 40%;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: 0;
+            margin-bottom: 0;
+            text-transform: uppercase;
+
+            a,
+            a:visited {
+                color: color(purple);
+            }
+        }
+    }
+
+    a {
+        color: black;
+
+        &:focus,
+        &:hover {
+            color: color(purple);
+        }
+    }
+}
+
+.navigation {
+
+    @media (min-width: 768px) {
+        text-align: right;
+        width: 60%;
+    }
+
+    ul {
+        font-size: 1.8rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            display: inline-block;
+            font-weight: 700;
+            margin: 0 10px;
+            text-transform: lowercase;
+
+    		@media (min-width: 768px) {
+				margin: 0 0 0 40px;
+			}
+        }
+    }
+}
+
+.page-title {
+    padding: 115px 0;
+    position: relative;
+    text-align: center;
+    h1,
+    span {
+        font-weight: 600;
+        z-index: 2;
+    }
+    h1 {
+        font-size: 3.2rem;
+    }
+    span {
+        color: color(grey);
+        display: block;
+        font-size: 10rem;
+        opacity: .1;
+        position: absolute;
+        top: 45px;
+        width: 100%;
+    }
+}
+
+.page-title.home {
+    h1,
+    p {
+        margin: 0 auto;
+        text-align: left;
+        width: 480px;
+    }
+    h1 {
+        font-size: 2.8rem;
+        margin-bottom: 10px;
+    }
+    .page-title-box {
+        background-color: color(purple);
+        height: 235px;
+        left: 50%;
+        margin-left: -180px;
+        margin-top: -10px;
+        opacity: .2;
+        position: absolute;
+        width: 450px;
+        z-index: -1;
+    }
+}

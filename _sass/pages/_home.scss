@@ -1,0 +1,49 @@
+.about {
+	position: relative;
+
+	.content {
+		max-width: 680px;
+	}
+
+	p:first-of-type {
+		// font-size: 2rem;
+		// line-height: 3.4rem;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+
+	.image {
+		max-width: 360px;
+
+		@media (min-width: 768px) {
+			position: absolute;
+			right: -20px;
+			top: 0;
+		}
+	}
+}
+
+.col-set-2 {
+	margin-top: 30px;
+
+	&:after {
+		display: table;
+		content: '';
+		clear: both;
+	}
+
+	@media (min-width: 768px) {
+		justify-content: space-between;
+		display: flex;
+
+		.col-1,
+		.col-2 {
+			width: 48.5%;
+		}
+	}
+
+
+}

@@ -1,0 +1,68 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-weight: 400;
+	color: #333;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: $font-family-header;
+	margin: 0;
+	letter-spacing: 2px;
+}
+
+h1 {
+	font-size: 3rem;
+	// font-size: 4rem;
+	margin: 0 0 30px;
+	padding: 0;
+}
+
+h2 {
+	font-size: 3.2rem;
+	margin: 0;
+	padding: 0;
+}
+
+h3 {
+	font-size: 2.4rem;
+}
+
+h4 {
+	font-size: 1.9rem;
+	margin-bottom: 10px;
+}
+
+p,
+ul {
+	font-size: 1.6rem;
+	// font-size: 1.8rem;
+	line-height: 1.6;
+	margin: 0 0 20px;
+	color: #666;
+}
+
+ul li {
+	margin-bottom: 6px;
+}
+
+ul.unlisted {
+	margin-left: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+small {
+	font-size: 1.3rem;
+}
+
+a {
+	text-decoration: none;
+	color: color(purple);
+	transition: .3s all ease-in-out;
+}
