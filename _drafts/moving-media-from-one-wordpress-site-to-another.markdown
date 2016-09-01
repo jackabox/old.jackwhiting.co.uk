@@ -44,3 +44,36 @@ We are looking to return to sets of data per each media file, this is the **_wp_
 ~~~sql
 SELECT * FROM `wp_postmeta` where `meta_key` LIKE "%wp_attach%"
 ~~~
+
+### Importing the Media
+To get the media table entries into our database we will need to import them. We will do this by using the CSVs we just created. The reason behind using a near blank WordPress state for this is because each post we are going to import will have an ID and we don’t want this to conflict with any existing data. _Note: you could change the entities (or us a script to do this) but the postmeta needs to match up correctly with the post._
+
+To import the data we first need to open the database of the blank WordPress site within Sequel Pro. You’ll need to click the table that matches your exported CSV. So, to import the metadata we’d have to click on **wp_postmeta** before we import.
+
+With the table selected go to **File > Import** or use the OSX shortcut **CMD + SHIFT + I**, locate the CSV you exported to your computer and select it. Once you’ve selected it you should be asked to match up the rows (which should automatically match), select the import method as insert and finally check that the first line contains the table names (this will depend on your export options).
+
+![1-6E2Zc148shRkbKCnAodVcg.png](/uploads/1-6E2Zc148shRkbKCnAodVcg.png)
+
+_Note: If you do not care about the data already in the system, you can use replace as the import method which will overwrite any conflicts it may find, but as this is a new install you shouldn’t really have any conflicts._
+
+Repeat this process for the other CSVs you exported and all of your data will be imported. 
+
+There are just a couple more steps left to go.
+
+### Updating the URLs
+
+By default, WordPress will store some information about the uploads in the database with absolute URLs. This is a problem because they will be referencing the old sites media locations. However, in a few simple SQL Queries, we can update these records to make sure they point to our new site.
+
+~~~sql
+UPDATE wp_posts SET guid = replace(guid, 'http://OLD-URL.com/','http://NEW-URL.com/');
+
+UPDATE wp_posts SET post_content = replace(post_content, 'http://OLD-URL.com/', 'http://NEW-URL.com/');
+
+UPDATE wp_postmeta SET meta_value = replace(meta_value,'http://OLD-URL.com/','http://NEW-URL.com/');
+~~~
+
+Not all sites will need to have the data replaced, but it’s better to make sure. If there are no matches for the command, it will just skip through the row. Now the database entries are updated we just need to move the actual files.
+
+You can move the files any way you feel comfortable, just move the old sites **wp-content/uploads** folder to the new site. All paths and URLs will match up because we’ve already added the entries.
+
+Finally, head into the WordPress admin and check if you can see the media in the media library.
