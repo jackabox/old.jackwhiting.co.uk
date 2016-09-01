@@ -61,3 +61,19 @@ Repeat this process for the other CSVs you exported and all of your data will be
 There are just a couple more steps left to go.
 
 ### Updating the URLs
+
+By default, WordPress will store some information about the uploads in the database with absolute URLs. This is a problem because they will be referencing the old sites media locations. However, in a few simple SQL Queries, we can update these records to make sure they point to our new site.
+
+~~~sql
+UPDATE wp_posts SET guid = replace(guid, 'http://OLD-URL.com/','http://NEW-URL.com/');
+
+UPDATE wp_posts SET post_content = replace(post_content, 'http://OLD-URL.com/', 'http://NEW-URL.com/');
+
+UPDATE wp_postmeta SET meta_value = replace(meta_value,'http://OLD-URL.com/','http://NEW-URL.com/');
+~~~
+
+Not all sites will need to have the data replaced, but it’s better to make sure. If there are no matches for the command, it will just skip through the row. Now the database entries are updated we just need to move the actual files.
+
+You can move the files any way you feel comfortable, just move the old sites **wp-content/uploads** folder to the new site. All paths and URLs will match up because we’ve already added the entries.
+
+Finally, head into the WordPress admin and check if you can see the media in the media library.
