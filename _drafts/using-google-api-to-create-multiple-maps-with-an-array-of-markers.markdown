@@ -57,6 +57,98 @@ Array
 
 I generated a simplified PHP Array that included only the latitudes and longitudes, broken down by a sub-array. Each inner array was a location, and each array within that was a property. The first sub-array was actually the latitude and longitude of the location (this was used to centre the map).
 
-### Setting Up Our Map Containers
+## Setting Up Our Map Containers
 
 For each item in our original `WP_Query` we created a `div` which had a unique ID. This allows us to reference the `div` to display the map which associates with the index of the array item we are in.
+
+~~~html
+<div id="map1"></div>
+~~~
+
+I created these when calling the original `WP_Query` to ensure there was the correct amount of elements. If you prefer, you could append these  in JavaScript.
+
+## Connecting it all with JavaScript
+
+Now we need to bring it all together. We are going to create a function which we will call to manage the PHP array. Just above the footer insert the following.
+
+~~~javascript
+<script>
+function initMap() {
+
+}
+initMap();
+<script>
+~~~
+
+Within the function, we will encode our PHP array into JSON so that it becomes a little easier, and cleaner, to work with. At the same time we will create an array to hold all of the map data.
+
+~~~javascript
+var locations = <?php echo json_encode( $phpArray ); ?>;
+var map = [];
+~~~
+
+Using the JSON data we now have at our hand. we will write a for loop to loop around the locations until we reach the end of the JSON, grab the first latitude and longitude to define our centre point, and then create a map for each one.
+
+~~~javascript
+for (var i = 0; i < locations.length; i++) {
+  var latlng = new google.maps.LatLng(locations[i][0][0], locations[i][0][1]);
+  // create the map on the div with the ID + the index of the array we are on
+  var map = new google.maps.Map(document.getElementById(‘map’ + i), {
+    center: latlng,
+    zoom: 13,
+    scrollwheel: false,
+    mapTypeControl: false,  
+    draggable: true
+  });
+  maps.push(map);
+}
+~~~
+
+This will now have successfully created a map for each location in our Array, to add the markers we need to expand the for loop a little. We do this by writing another for loop after the `maps.push(map)` line. This for loop will loop around the child array, pulling out all of the latitude and longitude values of the properties, yet ignoring the first one we used to set the map centre.
+
+~~~javascript
+for (var j = 0; j < locations[i].length; j++) {
+  if( j != 0 ) {
+    var loc = new google.maps.LatLng(locations[i][j][0], locations[i][j][1]);
+    var marker = new google.maps.Marker({
+      position: loc,
+      map: map
+    });
+  }
+}
+~~~
+
+To wrap this up the complete JavaScript would look a little something like this...
+
+~~~javascript
+<script>
+  function initMap() {
+    var locations = <?php echo json_encode( $mapHolder ); ?>;
+    var maps = [];
+    for (var i = 0; i < locations.length; i++) {
+      var latlng = new google.maps.LatLng(locations[i][0][0], locations[i][0][1]);
+      var map = new google.maps.Map(document.getElementById(‘map’ + i), {
+        center: latlng,
+        zoom: 13,
+        scrollwheel: false,
+        mapTypeControl: false,
+        draggable: true
+      });
+      maps.push(map);
+      for (var j = 0; j < locations[i].length; j++) {
+        if(j != 0 ) {
+          var loc = new google.maps.LatLng(locations[i][j][0], locations[i][j][1]);
+          var marker = new google.maps.Marker({
+            position: loc,
+            map: map
+          });
+        }
+      }
+    }
+  }
+  
+  initMap();
+</script>
+~~~
+
+That should be all you need. If you bump into any issues, please let me know so I can update the code.
