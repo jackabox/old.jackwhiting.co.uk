@@ -1,7 +1,7 @@
 ---
 title: Crohn's Tracker
+date: 2014-10-12 00:00:00 Z
 layout: works-single
-date: 2014-10-12
 link: 
 color: purple
 imageThumb: crohnstracker-thumb.jpg
