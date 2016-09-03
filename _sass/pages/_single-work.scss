@@ -1,15 +1,30 @@
 .work-single {
-	display: flex;
-	justify-content: space-between;
 	margin-bottom: 30px;
+
+	@media (min-width: 600px) {
+		display: flex;
+		justify-content: space-between;
+	}
 }
 
 .work-single__description {
-	width: 71%;
+	@media (min-width: 600px) {
+		width: 66%;
+	}
+
+	@media (min-width: 768px) {
+		width: 71%;
+	}
 }
 
 .work-single__meta {
-	width: 25%;
+	@media (min-width: 600px) {
+		width: 33%;
+	}
+
+	@media (min-width: 768px) {
+		width: 25%;
+	}
 
 	p {
 		font-size: 15px;
@@ -25,9 +40,19 @@
 }
 
 .work-images {
-	padding: 80px 50px;
+	margin: 0 -25px;
+	width: calc(100% + 50px);
 	background-color: #f7f7f7;
 	text-align: center;
+	padding: 20px 30px;
+
+	@media (min-width 600px) {
+		padding: 50px 35px;
+	}
+
+	@media (min-width: 768px) {
+		padding: 60px;
+	}
 
 	img {
 		margin: 0 auto;

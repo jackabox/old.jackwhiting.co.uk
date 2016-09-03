@@ -71,15 +71,20 @@ $orange: #D5C6C9;
 }
 
 .works {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	@media (min-width: 500px) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
 }
 
 .work-item {
 	margin-bottom: 30px;
-	width: 48%;
 	position: relative;
+
+	@media (min-width: 500px) {
+		width: 48%;
+	}
 
 	img {
 		max-width: 100%;
@@ -91,10 +96,14 @@ $orange: #D5C6C9;
 	}
 
 	.image {
-		padding: 40px;
+		padding: 15px;
 		margin-bottom: 15px;
 		background: #ddd;
 		overflow: hidden;
+
+		@media (min-width: 768px) {
+			padding: 40px;
+		}
 	}
 
 	&:hover {
@@ -126,7 +135,15 @@ $orange: #D5C6C9;
 			position: absolute;
 			top: 50%;
 			transform: translateY(-50%);
+		}
+
+		h3 {
 			font-size: 19px;
+			color: color(white);
+			font-family: $font-family;
+			margin-bottom: 10px;
+			letter-spacing: 0;
+			font-weight: 600;
 		}
 
 		b {
