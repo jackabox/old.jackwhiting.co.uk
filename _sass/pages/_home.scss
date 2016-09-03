@@ -1,28 +1,39 @@
 .about {
 	position: relative;
 
-	.content {
-		max-width: 680px;
+	&:after {
+		clear: both;
+		content: '';
+		display: table;
 	}
 
-	p:first-of-type {
-		// font-size: 2rem;
-		// line-height: 3.4rem;
+	@media (min-width: 768px) {
+		justify-content: space-between;
+		display: flex;
+
+		.content {
+			width: 65%;
+		}
+
+
+		.image {
+			width: 30%;
+			margin-right: -20px;
+		}
+	}
+
+	@media (min-width: 550px) and (max-width: 767px) {
+		.image {
+			float: right;
+			width: 50%;
+		}
 	}
 
 	img {
 		width: 100%;
+		max-width: 350px;
 		height: auto;
-	}
-
-	.image {
-		max-width: 360px;
-
-		@media (min-width: 768px) {
-			position: absolute;
-			right: -20px;
-			top: 0;
-		}
+		margin-top: 20px;
 	}
 }
 
@@ -35,7 +46,14 @@
 		clear: both;
 	}
 
+	@media (min-width: 550px) {
+		width: 50%;
+		float: left;
+	}
+
 	@media (min-width: 768px) {
+		float: none;
+		width: 100%;
 		justify-content: space-between;
 		display: flex;
 
