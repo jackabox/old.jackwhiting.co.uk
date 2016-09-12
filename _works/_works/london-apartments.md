@@ -1,7 +1,6 @@
 ---
 title: London Apartments
 date: 2016-08-01 00:00:00 Z
-published: false
 link: http://londonapartments.com
 color: purple
 imageThumb: fla-thumb.jpg
