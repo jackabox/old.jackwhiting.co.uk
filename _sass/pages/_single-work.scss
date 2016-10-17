@@ -40,9 +40,8 @@
 }
 
 .work-images {
-	margin: 0 -25px;
-	width: calc(100% + 50px);
-	background-color: #f7f7f7;
+	width: 100%;
+	background-color: #090909;
 	text-align: center;
 	padding: 20px 30px;
 
@@ -51,7 +50,7 @@
 	}
 
 	@media (min-width: 768px) {
-		padding: 60px;
+		padding: 80px;
 	}
 
 	img {

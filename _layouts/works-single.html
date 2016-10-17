@@ -1,13 +1,13 @@
 {% include header.html %}
 
+	{% if content == '' %}
 	<div class="single container">
 		<div class="content">
-			<h1 class="work-title">{{ page.title }}</h1>
-
 			<div class="work-single">
 				<div class="work-single__description">
 					{{ content }}
 				</div>
+
 				<div class="work-single__meta">
 					<h4>Project Date:</h4>
 					<!-- <p><?php the_date(); ?></p> -->
@@ -28,6 +28,7 @@
 			</div>
 		</div>
 	</div>
+	{% endif %}
 
 
 	{% if page.imageThumb != '' %}

@@ -5,8 +5,8 @@
 @import 'libraries/normalize';
 $max-width-outer: 1100px;
 $max-width-inner: 860px;
-$font-family: 'Quicksand', sans-serif;
-$font-family-header: 'Playfair Display', serif;
+$font-family: 'Open Sans', sans-serif;
+$font-family-header: 'Lora', serif;
 
 * {
 	box-sizing: border-box;
@@ -22,11 +22,11 @@ html {
 
 body {
 	min-height: 100%;
-	padding: 160px 15px 15px;
+	padding: 0 15px 15px;
 	font-family: $font-family;
 
     @media (min-width: 768px) {
-		padding-top: 140px;
+		padding: 0 40px 40px;
 	}
 }
 
@@ -37,7 +37,6 @@ body {
 %container {
 	width: 100%;
 	margin: 0 auto;
-	padding: 0 10px;
 	max-width: $max-width-outer;
 }
 

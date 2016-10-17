@@ -1,19 +1,9 @@
 $header-height: 80px;
 
 .header {
-    background-color: #fefefe;
-    left: 0;
-    padding: 30px 15px 20px;
-    position: fixed;
-    right: 0;
+    padding-bottom: 20px;
     text-align: center;
-    top: 0;
     width: 100%;
-    z-index: 99;
-    	box-shadow: 0 0 2px 2px #f7f7f7;
-
-    &.scrolled {
-    }
 
     @media (min-width: 768px) {
         padding: 0;
@@ -55,7 +45,10 @@ $header-height: 80px;
 
             a,
             a:visited {
-                color: color(purple);
+                display: inline-block;
+                border-bottom: 5px solid #090909;
+                color: #090909;
+                line-height: $header-height;
             }
         }
     }
@@ -139,5 +132,57 @@ $header-height: 80px;
         position: absolute;
         width: 450px;
         z-index: -1;
+    }
+}
+
+
+.hero {
+    background-color: #090909;
+    min-height: 320px;
+    margin-bottom: 60px;
+    padding: 20px;
+    position: relative;
+
+    @media (min-width: 600px) {
+        padding: 40px;
+    }
+
+    @media (min-width: 820px) {
+        padding: 80px;
+    }
+    
+    &--home {
+        height: calc(100vh - 145px);
+        min-height: 420px;
+    }
+
+    &__text {
+        @extend %container;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    h1 {
+        color: white;
+        font-weight: 600;
+        font-size: 3rem;
+        line-height: 1;
+        margin-bottom: 16px;
+
+        @media (min-width: 768px) {
+            font-size: 5rem;
+        }
+    }
+
+    p {
+        color: white;
+        @media (min-width: 768px) {
+            font-size: 2rem;
+        }
+    }
+
+    h1, p {
+        max-width: 768px;
     }
 }

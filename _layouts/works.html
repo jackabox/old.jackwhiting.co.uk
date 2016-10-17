@@ -1,11 +1,6 @@
 {% include header.html %}
 
 	<div class="work container">
-		<div class="content">
-			<h1>Works</h1>
-			<p class="first">Here are a few selected pieces I've worked on over the years. Click on one to read a little bit more about it and the process I was involved in.</p>
-		</div>
-
 		<div class="works">
 			{% assign works = (site.works | sort: 'date') | reverse %}
 			{% for work in works %}
