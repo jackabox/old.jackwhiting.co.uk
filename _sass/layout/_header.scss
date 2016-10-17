@@ -138,7 +138,6 @@ $header-height: 80px;
 
 .hero {
     background-color: #090909;
-    min-height: 320px;
     margin-bottom: 60px;
     padding: 20px;
     position: relative;
@@ -154,13 +153,16 @@ $header-height: 80px;
     &--home {
         height: calc(100vh - 145px);
         min-height: 420px;
+
+        .hero__text {        
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
     }
 
     &__text {
         @extend %container;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
     }
 
     h1 {
