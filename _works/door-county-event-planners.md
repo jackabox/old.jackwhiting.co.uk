@@ -8,7 +8,6 @@ categories:
 - WordPress
 layout: works-single
 ---
-
 Door County Event Planners wanted a website which showed off their character and allowed people to truly understand the passion they put into their event planning. 
 
 Built using WordPress as a base, this site was aimed to deliver brief information about what services they provide and reviews from their customers. 

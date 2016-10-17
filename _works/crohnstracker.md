@@ -9,7 +9,6 @@ categories:
 - Bespoke
 layout: works-single
 ---
-
 Crohn's Tracker started as a passion project for myself and later became my final dissertation project. 
 
 Living with Crohn's Disease can be hard and at times taxing. I wanted to create a community which would be able to help each other. The app allowed a user to track their symptoms, food eaten, medication and appointments. They could also connect with others who shared similar issues.

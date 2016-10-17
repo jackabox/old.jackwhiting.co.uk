@@ -139,11 +139,11 @@ $header-height: 80px;
 .hero {
     background-color: #090909;
     margin-bottom: 60px;
-    padding: 20px;
+    padding: 30px;
     position: relative;
 
     @media (min-width: 600px) {
-        padding: 40px;
+        padding: 50px;
     }
 
     @media (min-width: 820px) {
@@ -179,6 +179,7 @@ $header-height: 80px;
 
     p {
         color: white;
+        margin-bottom: 0;
         @media (min-width: 768px) {
             font-size: 2rem;
         }

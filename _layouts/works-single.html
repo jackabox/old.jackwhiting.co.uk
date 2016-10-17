@@ -1,6 +1,7 @@
 {% include header.html %}
-
-	{% if content == '' %}
+	
+	{% assign check = post.content | strip_newlines %}
+	{% if check != nil %}
 	<div class="single container">
 		<div class="content">
 			<div class="work-single">
