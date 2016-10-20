@@ -1,6 +1,7 @@
 ---
 title: Crohn's Tracker
 date: 2014-10-12 00:00:00 Z
+layout: works-single
 link: https://invis.io/RT85XM35F
 thumbnail: crohnstracker-thumb.jpg
 images:
@@ -9,7 +10,12 @@ categories:
 - Laravel
 - Bespoke
 - Ember.js
-layout: works-single
+tags:
+- crohns disease
+- tracker
+- design
+- application
+- web app
 ---
 Crohn's Tracker started as a passion project for myself and later became my  dissertation project at University. The application was aimed at people living with Crohn's Disease and helping them communicate with others whilst managing their condition.
 
