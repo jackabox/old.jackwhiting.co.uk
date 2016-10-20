@@ -1,12 +1,8 @@
 .work-single {
 	margin-bottom: 30px;
 
-	@media (min-width: 600px) {
-		width: 66%;
-	}
-
-	@media (min-width: 768px) {
-		width: 71%;
+	@media (min-width: 880px) {
+		width: 75%;
 	}
 }
 
