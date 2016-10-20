@@ -5,15 +5,19 @@
 			{% assign works = (site.works | sort: 'date') | reverse %}
 			{% for work in works %}
 				<article class="work-item animated slideInUp {{ work.color }}">
-					<div class="image"><img src="/assets/works/{{ work.imageThumb }}" alt=""></div>
-  					<a href="{{ work.url }}" class="caption">
-  						<div>
-  							<h3>{{ work.title | escape }}</h3>
-  							{% for category in work.categories %}
-  								<span>{{ category }}</span>
-  							{% endfor %}
-  						</div>
-  					</a>
+					<div class="image">
+						<a href="{{ work.url }}" title="Link to {{ work.title | escape }}"><img src="/assets/works/{{ work.imageThumb }}" alt=""></a>
+					</div>
+  					
+  					<h3><a href="{{ work.url }}" title="Link to {{ work.title | escape }}">{{ work.title | escape }}</a></h3>
+  
+					{% for category in work.categories %}
+						<span>{{ category }}</span>
+					{% endfor %}
+
+					{{ work.excerpt }}
+  						
+					<p><a href="{{ work.url }}" title="Link to {{ work.title | escape }}" class="button">View Work</a></p>
   				</article>
 			{% endfor %}
 		</div>

@@ -5,7 +5,7 @@
 		<div class="content content--about">
 			<h2>About</h2>
 			<p class="first">Hello, My name is Jack Whiting.</p>
-	    	<p>I am a product designer and developer based in Nottingham, United Kingdom. I take pride in building custom solutions to a companies problem. The majority of my time is spent between agency work, freelancing and side projects.</p>
+	    	<p>I am a product designer and developer based in Nottingham, United Kingdom. I take pride in building custom solutions which solve a companies problem. The majority of my time is spent between agency work, freelancing and side projects.</p>
 			<p>As a developer, I pride myself on building websites which function well, have great design, simplicity and speed. I play with WordPress, Laravel and Shopify to build easily accesible websites.</p>
 
 			
@@ -15,16 +15,19 @@
 				{% assign works = (site.works | sort: 'date') | reverse %}
 				{% for work in works limit:2 %}
 					<li class="work-item">
-						<a href="{{ work.url }}">
-							<div class="image"><img src="/assets/works/{{ work.imageThumb }}" alt=""></div>
-							<h3>{{ work.title | escape }}</h3>
-							{% for category in work.categories %}
-  								<span>{{ category }}</span>
-  							{% endfor %}
-							{{ work.excerpt }}
-						</a>
+						<div class="image">
+							<a href="{{ work.url }}" title="Link to {{ work.title | escape }}"><img src="/assets/works/{{ work.imageThumb }}" alt=""></a>
+						</div>
 
-						<p><a href="{{ work.url }}" class="button">View Work</a></p>
+						<h3><a href="{{ work.url }}" title="Link to {{ work.title | escape }}">{{ work.title | escape }}</a></h3>
+						
+						{% for category in work.categories %}
+							<span>{{ category }}</span>
+						{% endfor %}
+
+						{{ work.excerpt }}
+
+						<p><a href="{{ work.url }}" title="Link to {{ work.title | escape }}" class="button">View Work</a></p>
 					</li>
 				{% endfor %}
 				</ul>
