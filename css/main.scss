@@ -47,6 +47,7 @@ body {
 $green: #C6D5D2;
 $purple: #CBC6D5;
 $orange: #D5C6C9;
+$black: #090909;
 
 /* Libraries */
 @import 'libraries/animate';
@@ -56,123 +57,23 @@ $orange: #D5C6C9;
 
 @import 'pages/home';
 @import 'pages/single-work';
+@import 'pages/works';
 
-.work {
-	.content {
-		max-width: 720px;
-	}
+.button {
+	padding: 9px 16px;
+	background-color: $black;
+	color: white;
+	font-weight: bold;
+	font-size: 1.4rem;
+	letter-spacing: 1px;
+	border: 2px solid $black;
+	display: inline-block;
+	transition: .3s all ease-in-out;
 
-	p:first-of-type {
-		font-size: 2rem;
-		line-height: 3.4rem;
-		margin-bottom: 40px;
-	}
-}
-
-.works {
-	@media (min-width: 500px) {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-	}
-}
-
-.work-item {
-	margin-bottom: 30px;
-	position: relative;
-
-	@media (min-width: 500px) {
-		width: 48%;
-	}
-
-	img {
-		max-width: 100%;
-		height: auto;
-		margin-bottom: 0;
-		transition: .4s all ease-in-out;
-		border: 0;
-		box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.3);
-	}
-
-	.image {
-		padding: 15px;
-		margin-bottom: 15px;
-		background: #ddd;
-		overflow: hidden;
-
-		@media (min-width: 768px) {
-			padding: 40px;
-		}
-	}
-
-	&:hover {
-		.image img {
-			transform: scale(1.05);
-		}
-
-		.caption {
-			visibility: visible;
-			opacity: 1;
-		}
-	}
-
-	.caption {
-		position: absolute;
-		top: 0;
-		bottom: 15px;
-		transition: .4s all ease-in-out;
-		left: 0;
-		right: 0;
-		background-color: rgba(0,0,0,0.8);
-		opacity: 0;
-		visibility: hidden;
-		color: white;
-
-		div {
-			text-align: center;
-			width: 100%;
-			position: absolute;
-			top: 50%;
-			transform: translateY(-50%);
-		}
-
-		h3 {
-			font-size: 19px;
-			color: color(white);
-			font-family: $font-family;
-			margin-bottom: 10px;
-			letter-spacing: 0;
-			font-weight: 600;
-		}
-
-		b {
-			display: block;
-		}
-
-		span {
-			font-size: 16px;
-			margin-top: 5px;
-		}
-
-		span:after {
-			content: ', ';
-		}
-
-		span:last-child:after {
-			content: '';
-		}
-	}
-
-	&.green .image {
-		background-color: $green;
-	}
-
-	&.purple .image {
-		background-color: $purple;
-	}
-
-	&.orange .image {
-		background-color: $orange;
+	&:hover,
+	&:focus {
+		background-color: white;
+		color: $black;
 	}
 }
 
