@@ -1,5 +1,6 @@
 ---
 title: Hole Hearted
+layout: works-single
 date: 2016-10-13 00:00:00 Z
 published: true
 link: https://holehearted.co
@@ -10,7 +11,17 @@ categories:
 - WordPress
 - WooCommerce
 - Ecommerce
-layout: works-single
+tags:
+- woocommerce
+- wordpress
+- ecommerce
+- ecommerce development
+- web design
+- hole hearted
+- holehearted
+- jackabox
+- clothing
+- online store
 ---
 Hole Hearted were looking to move from their Big Cartel platform and provide a more professional image with a new site. They wanted their new site to promote the products at the forefront and show their character and soul. 
 

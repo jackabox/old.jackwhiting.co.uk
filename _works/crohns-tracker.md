@@ -16,6 +16,11 @@ tags:
 - design
 - application
 - web app
+- jackabox
+- jack whiting
+- crohns tracker
+- crohn's disease
+- ibd
 ---
 Crohn's Tracker started as a passion project for myself and later became my  dissertation project at University. The application was aimed at people living with Crohn's Disease and helping them communicate with others whilst managing their condition.
 

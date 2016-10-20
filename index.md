@@ -10,5 +10,12 @@ tags:
 - product
 - nottingham
 - freelance
+- work
+- portfolio
+- jack whiting
+- jackabox
+- web developer
+- web design
+- product
 ---
 

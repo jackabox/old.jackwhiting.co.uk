@@ -1,5 +1,6 @@
 ---
 title: Rising Star Programme
+layout: works-single
 date: 2015-07-29 00:00:00 Z
 link: http://www.krugercowne.com/risingstar/
 thumbnail: risingstar-thumb.jpg
@@ -8,7 +9,14 @@ images:
 categories:
 - WordPress
 - Promotion
-layout: works-single
+tags:
+- space
+- rising star programme
+- kruger cowne
+- competition
+- web design
+- promotion
+- single page
 ---
 One of my first projects at Adtrak was to create a one page promotional website for the Rising Star Programme ran by Kruger Cowne. The promotion was to find one person from across the world to send into space.
 

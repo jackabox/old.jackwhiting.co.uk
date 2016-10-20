@@ -1,5 +1,6 @@
 ---
 title: London Apartments
+layout: works-single
 date: 2016-08-01 00:00:00 Z
 link: http://findlondonapartments.com
 thumbnail: fla-thumb.jpg
@@ -8,7 +9,16 @@ images:
 categories:
 - WordPress
 - Bespoke
-layout: works-single
+tags:
+- wordpress
+- search facility
+- advanced
+- bespoke
+- web development
+- directory
+- apartment booking
+- london
+- web design
 ---
 Robert & Polly came to us requesting an update to their apartment booking service in London. They wanted to give it a fresh look and provide the user with a better experience to increase conversion rate. 
 
