@@ -1,10 +1,11 @@
 ---
 title: Hole Hearted
-date: 2016-06-09 00:00:00 Z
+date: 2016-10-13 00:00:00 Z
 published: true
-link: 
-color: green
-imageThumb: hh-thumb.jpg
+link: https://holehearted.co
+thumbnail: hh-thumb.jpg
+images: 
+- hh-full.jpg
 categories:
 - WordPress
 - Ecommerce

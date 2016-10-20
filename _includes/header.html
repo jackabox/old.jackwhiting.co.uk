@@ -53,6 +53,12 @@
             <p>I'm a product designer and developer from the United Kingdom. I've worked with plenty of companies and brands over the last 10 years doing web design, UI/UX design and front-end development.</p>
         </div>
     </div>
+    {% else if page.layout == 'works-single' %}
+    <div class="hero">
+        <div class="hero__text">
+            <h1>{{ page.title }}</h1>
+        </div>
+    </div>
     {% else %}
     <div class="hero">
         <div class="hero__text">

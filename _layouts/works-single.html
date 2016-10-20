@@ -10,34 +10,35 @@
 				</div>
 
 				<div class="work-single__meta">
-					<h4>Project Date:</h4>
-					<!-- <p><?php the_date(); ?></p> -->
-					<p>{{ page.date | date: "%b %-d, %Y" }}</p>
+					<div class="meta__date">
+						<h4>Date:</h4>
+						<p>{{ page.date | date: "%b %-d, %Y" }}</p>
+					</div>
 
-					<h4>Project Type:</h4>
-					<p>
+					<div class="meta__categories">
+						<h4>Categories:</h4>
+						<p>
 						{% for category in page.categories %}
 							<span>{{ category }}</span>
 						{% endfor %}
-					</p>
-					
-					{% if page.link != null %}
-						<h4>Link:</h4>
-						<p><a href="{{ page.link }}" title="Link to {{ page.title }}">View Online</a></p>
-					{% endif %}
+						</p>
+					</div>
 				</div>
+
+				{% if page.link != null %}
+					<div class="work-single__link">
+						<p><a href="{{ page.link }}" title="Link to {{ page.title }}" target="_blank" class="button">View Online</a></p>
+					</div>
+				{% endif %}
 			</div>
 		</div>
 	</div>
 	{% endif %}
 
-
-	{% if page.imageThumb != '' %}
-	<div class="work-images work-images--{{ page.color }}">
-    	<img src="{{ site.baseurl }}/assets/works/{{ page.imageThumb }}" alt="{{ page.title }}">
-	</div>
-	{% endif %}
-
-
+	{% for image in page.images %}
+		<div class="work-images container">
+	    	<img src="{{ site.baseurl }}/assets/works/{{ image }}" alt="Image of {{ page.title }}">
+		</div>
+	{% endfor %}
 
 {% include footer.html %}
