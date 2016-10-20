@@ -2,7 +2,10 @@
 title: Door County Event Planners
 date: 2013-04-21 00:00:00 Z
 link: http://doorcountyevents.com
-thumbnail: doorcountyevents-thumb.jpg
+thumbnail: dcep-thumb.jpg
+images:
+- dcep-full-home.jpg
+- dcep-full-services.jpg
 categories:
 - WordPress
 layout: works-single
