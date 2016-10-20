@@ -26,15 +26,13 @@
 	}
 
 	p {
-		font-size: 1.5rem;
+		font-size: 1.4rem;
+		font-weight: bold;
+		text-transform: uppercase;
 	}
 
-	span:after {
-		content: ',';
-	}
-
-	span:last-child:after {
-		content: '';
+	span {
+		margin-right: 15px;
 	}
 }
 
