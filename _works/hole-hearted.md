@@ -1,12 +1,6 @@
 ---
 title: Hole Hearted
-layout: works-single
 date: 2016-10-13 00:00:00 Z
-published: true
-link: https://holehearted.co
-thumbnail: hh-thumb.jpg
-images: 
-- hh-full.jpg
 categories:
 - WordPress
 - WooCommerce
@@ -22,7 +16,13 @@ tags:
 - jackabox
 - clothing
 - online store
+layout: works-single
+link: https://holehearted.co
+thumbnail: hh-thumb.jpg
+images:
+- hh-full.jpg
 ---
+
 Hole Hearted were looking to move from their Big Cartel platform and provide a more professional image with a new site. They wanted their new site to promote the products at the forefront and show their character and soul. 
 
 The site was built on [WordPress](http://wordpress.org) and [WooCommerce](http://woocommerce.com). They were chosen to remove as much expense from the site as possible for the client. 

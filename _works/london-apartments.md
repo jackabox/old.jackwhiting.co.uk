@@ -1,11 +1,6 @@
 ---
 title: London Apartments
-layout: works-single
 date: 2016-08-01 00:00:00 Z
-link: http://findlondonapartments.com
-thumbnail: fla-thumb.jpg
-images:
-- fla-full.jpg
 categories:
 - WordPress
 - Bespoke
@@ -19,7 +14,13 @@ tags:
 - apartment booking
 - london
 - web design
+layout: works-single
+link: http://findlondonapartments.com
+thumbnail: fla-thumb.jpg
+images:
+- fla-full.jpg
 ---
+
 Robert & Polly came to us requesting an update to their apartment booking service in London. They wanted to give it a fresh look and provide the user with a better experience to increase conversion rate. 
 
 I rebuilt the search engine the site was running off. Using Latitude and Longitude values with Google Maps to find key areas in London and provide appropriate results. 
