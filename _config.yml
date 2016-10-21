@@ -12,10 +12,9 @@ collections:
     title: Works
     output: true
 email: hi@jackwhiting.co.uk
-baseurl: 
-url: 
-twitter_username: jackabox
-github_username: jackabox
+baseurl: //jackwhiting.co.uk
+url: https://jackwhiting.co.uk
+enforce_ssl: https://jackwhiting.co.uk
 markdown: kramdown
 sass:
   style: compressed
