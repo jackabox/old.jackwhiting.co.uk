@@ -18,3 +18,5 @@ enforce_ssl: https://jackwhiting.co.uk
 markdown: kramdown
 sass:
   style: compressed
+gems:
+  - jekyll-redirect-from
