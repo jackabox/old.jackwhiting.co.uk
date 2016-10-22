@@ -16,7 +16,7 @@
 				{% for work in works limit:2 %}
 					<li class="work-item">
 						<div class="image">
-							<a href="{{ work.url }}" title="Link to {{ work.title | escape }}"><img src="/assets/works/{{ work.thumbnail }}" alt=""></a>
+							<a href="{{ work.url }}" title="Link to {{ work.title | escape }}"><img src="/assets/works/{{ work.thumbnail }}" alt="Thumbnail of {{ work.title }}"></a>
 						</div>
 
 						<h3><a href="{{ work.url }}" title="Link to {{ work.title | escape }}">{{ work.title | escape }}</a></h3>
