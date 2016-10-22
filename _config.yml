@@ -12,15 +12,9 @@ collections:
     title: Works
     output: true
 email: hi@jackwhiting.co.uk
-description: 'Freelance web designer from Nottingham, UK. With specialisation in WordPress
-  development and Shopify themes. Offering 7 years of experience in building beautiful
-  and highly functional websites.
-
-'
-baseurl: 
-url: 
-twitter_username: jackabox
-github_username: jackabox
+baseurl: //jackwhiting.co.uk
+url: https://jackwhiting.co.uk
+enforce_ssl: https://jackwhiting.co.uk
 markdown: kramdown
 sass:
   style: compressed
