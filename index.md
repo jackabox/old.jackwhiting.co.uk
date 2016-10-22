@@ -13,17 +13,5 @@ tags:
 - portfolio
 - jack whiting
 - jackabox
-redirect_from:
-  - /author/jackabox/
-  - /about/
-  - /changing-the-direction-of-the-blog/
-  - /2014-recapped/
-  - /blog/gridark/
-  - /2012/login-psd/
-  - /2012/metro-music-app/
-  - /2012/clean-writer-pro-review/
-  - /tag/wireframes/
-  - /freebies/gridark/feed/
-  - /tag/these/
 ---
 
