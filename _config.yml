@@ -19,5 +19,4 @@ markdown: kramdown
 sass:
   style: compressed
 gems:
-  - jekyll-redirect-from
   - jekyll-sitemap
