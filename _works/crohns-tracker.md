@@ -2,6 +2,7 @@
 title: Crohn's Tracker
 date: 2014-10-12 00:00:00 Z
 layout: works-single
+permalink: /works/crohns-tracker
 link: https://invis.io/RT85XM35F
 thumbnail: crohnstracker-thumb.jpg
 images:

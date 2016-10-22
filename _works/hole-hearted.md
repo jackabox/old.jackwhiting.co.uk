@@ -2,6 +2,7 @@
 title: Hole Hearted
 layout: works-single
 date: 2016-10-13 00:00:00 Z
+permalink: /works/hole-hearted
 published: true
 link: https://holehearted.co
 thumbnail: hh-thumb.jpg

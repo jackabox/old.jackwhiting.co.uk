@@ -2,6 +2,7 @@
 title: Rising Star Programme
 layout: works-single
 date: 2015-07-29 00:00:00 Z
+permalink: /works/rising-star-programme
 link: http://www.krugercowne.com/risingstar/
 thumbnail: risingstar-thumb.jpg
 images:

@@ -2,6 +2,7 @@
 title: London Apartments
 layout: works-single
 date: 2016-08-01 00:00:00 Z
+permalink: /works/london-apartments
 link: http://findlondonapartments.com
 thumbnail: fla-thumb.jpg
 images:

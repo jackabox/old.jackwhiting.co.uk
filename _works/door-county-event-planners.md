@@ -2,6 +2,7 @@
 title: Door County Event Planners
 layout: works-single
 date: 2013-04-21 00:00:00 Z
+permalink: /works/door-county-event-planners
 link: http://doorcountyevents.com
 thumbnail: dcep-thumb.jpg
 images:
