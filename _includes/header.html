@@ -4,9 +4,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
     <title>{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}</title>
-    {% if page.excerpt %}<meta name="description" content="{{ page.excerpt | strip_html }}">{% endif %}
-    {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
-    {% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
+    {% if page.excerpt %}
+    <meta name="description" content="{{ page.excerpt | strip_html }}">{% endif %} {% if page.tags %}
+    <meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %} {% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url
+    | remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
     <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
     <link href="{{ site.url }}/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
 
@@ -20,7 +21,7 @@
 
     <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico">
     <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.png">
-    
+
     <!-- webmaster -->
     <meta name="google-site-verification" content="uj8eYZSikfp_mKrU8t78U8BPGVhLEVsGEdWGIIz1QZU" />
     <meta name="msvalidate.01" content="E8BF4A4BDFEDB24BAC69B207EE53CFA5" />
@@ -31,43 +32,24 @@
             window.location.protocol = "https";
     </script>
 </head>
+
 <body>
 
     <header class="header">
-		<div class="header__wrap container">
-        	<div class="logo">
-            	<h1><a href="{{ site.baseurl }}/" title="Home Page">JW</a></h1>
-        	</div>
+        <div class="header__inner">
+            <div class="logo">
+                <h1><a href="{{ site.baseurl }}/" title="Home Page">Jack Whiting</a></h1>
+            </div>
 
-        	<nav role="navigation" class="navigation">
-            	<ul>
-                	<li><a href="{{ site.baseurl }}/work" title="Work">Work</a></li>
-				    <!-- <li><a href="/resume">Résumé</a></li> -->
-                	<li><a href="https://blog.jackwhiting.co.uk" title="Jack Whiting's Blog" target="_blank" class="outbound">Writing</a></li>
-                	<li><a class="hire-me" href="mailto:hi@jackwhiting.co.uk" title="Send me an Email">Hire Me</a></li>
-            	</ul>
-        	</nav>
-        </div>
-    </header>
+            <nav role="navigation" class="navigation">
+                <ul>
+                    <li><a href="{{ site.baseurl }}/about" title="About">About</a></li>
+                    <li><a href="{{ site.baseurl }}/work" title="Work">Works</a></li>
+                    <li><a href="{{ site.baseurl }}/blog" title="Blog">Blog</a></li>
+                    <li><a href="{{ site.baseurl }}/contact" title="Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div><!-- /.header__inner -->
+    </header><!-- /.header -->
 
-    {% if page.layout == 'front' %}
-    <div class="hero hero--home">
-        <div class="hero__text">
-            <h2>Jack Whiting</h2>
-            <p>I'm a product designer and developer from the United Kingdom. I've worked with plenty of companies over the last 10 years doing web design, UI/UX design and front-end development.</p>
-        </div>
-    </div>
-    {% else if page.layout == 'works-single' %}
-    <div class="hero">
-        <div class="hero__text">
-            <h2>{{ page.title }}</h2>
-        </div>
-    </div>
-    {% else %}
-    <div class="hero">
-        <div class="hero__text">
-            <h2>{{ page.title }}</h2>
-            <p>{{ page.excerpt | strip_html }}</p>
-        </div>
-    </div>
-    {% endif %}
+    <main>

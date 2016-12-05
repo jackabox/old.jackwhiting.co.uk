@@ -1,9 +1,0 @@
-@function color($request) {
-   @return map-get($color, $request);
-}
-$color: ( 
-	white: #fff, 
-	purple: #977B9E, 
-	grey: #090909, 
-	pastel-green: #C6D5D2
-);

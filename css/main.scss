@@ -1,83 +1,26 @@
 ---
 ---
+// Imports`
+@import 
+	'var/variables',
+	'var/functions',
+	'var/placeholders';
 
-@import 'var/colors';
-@import 'libraries/normalize';
-$max-width-outer: 1100px;
-$max-width-inner: 860px;
-$font-family: 'Open Sans', sans-serif;
-$font-family-header: 'Lora', serif;
+@import 
+	'libraries/normalize',
+	'libraries/animate';
 
-* {
-	box-sizing: border-box;
-}
+@import 
+	'components/buttons';
 
-html {
-	min-height: 100%;
-	font-size: 62.5%;
-	text-rendering: auto;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
+@import 
+	'layout/core',
+	'layout/typography',
+	'layout/header',
+	'layout/navigation',
+	'layout/footer';
 
-body {
-	min-height: 100%;
-	padding: 0 15px 15px;
-	font-family: $font-family;
-
-    @media (min-width: 768px) {
-		padding: 0 40px 40px;
-	}
-}
-
-.screen-reader-text {
-	display: none;
-}
-
-%container {
-	width: 100%;
-	margin: 0 auto;
-	max-width: $max-width-outer;
-}
-
-.container {
-	@extend %container;
-}
-
-$green: #C6D5D2;
-$purple: #CBC6D5;
-$orange: #D5C6C9;
-$black: #090909;
-
-/* Libraries */
-@import 'libraries/animate';
-
-@import 'layout/typography';
-@import 'layout/header';
-
-@import 'pages/home';
-@import 'pages/single-work';
-@import 'pages/works';
-
-.button {
-	padding: 9px 16px;
-	background-color: $black;
-	color: white;
-	font-weight: bold;
-	font-size: 1.4rem;
-	letter-spacing: 1px;
-	border: 2px solid $black;
-	display: inline-block;
-	transition: .3s all ease-in-out;
-
-	&:hover,
-	&:focus {
-		background-color: white;
-		color: $black;
-	}
-}
-
-.footer {
-	@extend %container;
-	margin-top: 50px;
-}
+@import 
+	'pages/home',
+	'pages/single-work',
+	'pages/works';

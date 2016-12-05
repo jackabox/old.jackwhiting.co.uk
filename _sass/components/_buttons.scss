@@ -1,0 +1,17 @@
+.button {
+	padding: 9px 16px;
+	background-color: color(black);
+	color: white;
+	font-weight: bold;
+	font-size: 1.4rem;
+	letter-spacing: 1px;
+	border: 2px solid color(black);
+	display: inline-block;
+	transition: .3s all ease-in-out;
+
+	&:hover,
+	&:focus {
+		background-color: color(white);
+		color: color(black);
+	}
+}
