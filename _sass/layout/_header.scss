@@ -1,12 +1,14 @@
 .header {
     padding: 20px 0;
     background-color: color(element);
+    height: 70px;
 
     .header__inner {
         @extend %container;
         padding: 0 10px;
         
         @media (min-width: 768px) {
+            padding: 0;
             display: flex;
         }
     }

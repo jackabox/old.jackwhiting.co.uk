@@ -1,0 +1,54 @@
+.hero {
+	background: #1e242c;
+    margin-top: -30px;
+    position: relative;
+
+    &.hero--home {
+        overflow: hidden;
+        height: calc(100vh - 70px);
+    }
+
+    img {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-40%);
+        width: auto;
+        height: 100%;
+        z-index: 2;
+    }
+
+	.overlay {
+		background-color: rgba(30,36,44,0);
+		background: filter-gradient(#1e242c, #1e242c, horizontal);
+		background: background-image(radial-gradient(center, ellipse cover, rgba(30,36,44,0) 0%, rgba(30,36,44,1) 69%));
+		z-index: 3;
+		position: absolute; 
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+	}
+
+    .content {
+        z-index: 4;
+		position: absolute;
+		top: 50%; left: 50%;
+		transform: translate(-50%, -50%);
+		padding: 0 10px;
+		@extend %container;
+        
+        @media (min-width: 768px) {
+            padding: 0;
+		}
+
+		h2, p {
+			color:color(white);
+			max-width: 400px;
+		}
+
+		h2 {
+			margin-bottom: 20px;
+		}
+    }
+}
