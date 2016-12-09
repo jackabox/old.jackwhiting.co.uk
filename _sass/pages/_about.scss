@@ -20,12 +20,19 @@
 		min-height: 200px;
 		margin-bottom: 30px;
 		padding: 30px;
+		transition: 0.3s;
+
+		&:hover {
+			box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+		}
 
 		h4 {
+			transition: 0.3s;			
 			margin-bottom: 15px;
 		}
 
 		.icon {
+			transition: 0.3s;			
 			font-size: 3.6rem;
 		}
 	}
