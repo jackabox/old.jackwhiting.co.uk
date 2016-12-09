@@ -10,14 +10,17 @@ html {
 }
 
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
     font-family: $font-family;
     color: color(font);
 }
 
+#main {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
 main {
-    padding-top: 30px;
+    padding-top: 60px;
     flex: 1 0 auto;
 }

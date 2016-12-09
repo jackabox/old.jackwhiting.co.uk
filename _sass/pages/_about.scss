@@ -1,0 +1,32 @@
+.about {
+	h1, p {
+		max-width: $max-width-inner;
+	}
+}
+
+.services {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+
+	h2 {
+		width: 100%;
+	}
+
+	.service__block {
+		display: block;
+		width: 31%;
+		background: #eee;
+		min-height: 200px;
+		margin-bottom: 30px;
+		padding: 30px;
+
+		h4 {
+			margin-bottom: 15px;
+		}
+
+		.icon {
+			font-size: 3.6rem;
+		}
+	}
+}
