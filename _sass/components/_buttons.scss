@@ -1,7 +1,7 @@
 .button {
 	padding: 9px 16px;
-	background-color: color(black);
-	color: white;
+	background-color: color(link);
+	color: color(white);
 	font-weight: bold;
 	font-size: 1.4rem;
 	letter-spacing: 1px;
@@ -11,7 +11,6 @@
 
 	&:hover,
 	&:focus {
-		background-color: color(white);
-		color: color(black);
+		background-color: color(element);
 	}
 }
