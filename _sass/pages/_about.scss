@@ -14,12 +14,22 @@
     }
     .service__block {
         display: block;
-        width: 31%;
         background: #eee;
         min-height: 200px;
         margin-bottom: 30px;
-        padding: 30px;
+        padding: 20px;
         transition: 0.3s;
+		width: 100%;
+
+		@media(min-width: 600px) {
+			width: 48.5%;
+			padding: 30px;
+		}
+
+		@media (min-width: 860px) {
+	        width: 31%;		
+		}
+
         &:hover {
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
         }
