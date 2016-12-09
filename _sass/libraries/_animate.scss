@@ -26,27 +26,3 @@
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
 }
-
-/////// PAGE ANIMATIONS ///////
-.m-scene .scene_element {
-    animation-duration: 0.25s;
-    transition-timing-function: ease-in;
-    animation-fill-mode: both;
-}
-
-.m-scene .scene_element--fadein {
-    animation-name: fadeIn;
-}
-
-.m-scene.is-exiting .scene_element {
-    animation-direction: alternate-reverse;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
