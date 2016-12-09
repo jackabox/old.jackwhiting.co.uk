@@ -23,5 +23,15 @@
                 margin: 0 0 0 30px;
             }
         }
+        
+        a {
+            transition: .3s;
+        }
+
+        a.active,
+        a:hover, 
+        a:focus {
+            color: color(link);
+        }
     }
 }

@@ -5,12 +5,18 @@ collections:
   posts:
     title: Posts
     output: true
-  uploads:
-    title: Uploads
-    output: true
   works:
     title: Works
     output: true
+navigation:
+  - title: About
+    url: /about/
+  - title: Work
+    url: /work/
+  - title: Blog
+    url: /blog/
+  - title: Contact
+    url: /contact/
 email: hi@jackwhiting.co.uk
 baseurl: 
 url: https://jackwhiting.co.uk
