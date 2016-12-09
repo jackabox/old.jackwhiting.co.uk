@@ -5,17 +5,20 @@
     right: 0;
     width: 100%;
     height: 100vh;
-    background: #1E242C;
+    background: color(element);
     z-index: 1001;
     display: none;
+
     &.active {
         display: block;
+
         .loader-content {
             position: relative;
             top: 50%;
             transform: translateY(-50%);
             text-align: center;
         }
+
         .spinner {
             width: 49px;
             height: 49px;
@@ -27,6 +30,7 @@
             background-color: rgb(255, 255, 255);
             animation: spinner 1.15s infinite linear;
         }
+
         .spinner:before,
         .spinner:after {
             animation: 1.15s infinite ease-in-out;
@@ -38,6 +42,7 @@
             left: 0;
             content: "";
         }
+
         .name {
             color: #1E242C;
             font-size: 24px;
