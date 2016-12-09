@@ -27,7 +27,7 @@
             display: inline-block;
             position: relative;
             vertical-align: middle;
-            background-color: rgb(255, 255, 255);
+            background-color: #77DD77;
             animation: spinner 1.15s infinite linear;
         }
 
@@ -44,7 +44,7 @@
         }
 
         .name {
-            color: #1E242C;
+            color: color(white);
             font-size: 24px;
             font-weight: bold;
             position: absolute;
