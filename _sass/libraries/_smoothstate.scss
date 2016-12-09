@@ -1,0 +1,15 @@
+.m-scene {
+	.scene_element {
+    	animation-duration: 0.25s;
+    	transition-timing-function: ease-in;
+    	animation-fill-mode: both;
+	}
+
+	.scene_element--fadein {
+    	animation-name: fadeIn;
+	}
+
+	&.is-exiting .scene_element {
+    	animation-direction: alternate-reverse;
+	}
+}

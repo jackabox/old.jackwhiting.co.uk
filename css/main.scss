@@ -8,10 +8,12 @@
 
 @import 
 	'libraries/normalize',
-	'libraries/animate';
+	'libraries/animate',
+	'libraries/smoothstate';
 
 @import 
-	'components/buttons';
+	'components/buttons',
+	'components/page-loader';
 
 @import 
 	'layout/core',
