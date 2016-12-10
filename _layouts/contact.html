@@ -1,6 +1,6 @@
 {% include header.html %}
 
-<div class="container container--intro">
+<div class="container">
 	<div class="content">
 		<h1>{{ page.title }}</h1>
 		{{ content }}
@@ -8,11 +8,53 @@
 </div>
 
 <section class="container">	
-	<form method="POST" action="http://formspree.io/hi@jackwhiting.co.uk">
-  		<input type="email" name="Email" placeholder="Your email">
-  		<textarea name="Message" placeholder="Your message"></textarea>
-  		<button type="submit">Send</button>
-	</form>
+	<div class="content">
+		<h3>Contact Form</h3>
+		<form method="POST" action="http://formspree.io/hi@jackwhiting.co.uk">
+			<p>
+				<label for="Name">Your Name<sup>*</sup></label>
+  				<input type="text" name="Name" placeholder="What is your name?" required>
+			</p>
+			<p>
+				<label for="Email">Email Address<sup>*</sup></label>
+  				<input type="email" name="Email" placeholder="What is your email?" required>
+			</p>
+			<p>
+				<label for="Message">Message<sup>*</sup></label>
+  				<textarea name="Message" placeholder="What can I help you with?"></textarea>
+			<p>
+  			<p><button type="submit" class="button">Send Message</button></p>
+		</form>
+	</div>
+
+	<aside class="sidebar">
+		<h3>Details</h3>
+
+		<div>
+			<h5>Availability</h5>
+			<p>Available Now</p>
+		</div>
+
+		<div>
+			<h5>Location</h5>
+			<p>Nottingham, UK</p>
+		</div>
+
+		<div>
+			<h5>Email</h5>
+			<p>hi@jackwhiting.co.uk</p>
+		</div>
+		
+		<div>
+			<h5>Elswhere</h5>
+			<ul class="social">
+				<li><a href="#" class="no-smoothstate" target="blank"><i class="icon icon-github"></i></a></li>
+				<li><a href="#" class="no-smoothstate" target="blank"><i class="icon icon-twitter"></i></a></li>
+				<li><a href="#" class="no-smoothstate" target="blank"><i class="icon icon-instagram"></i></a></li>
+				<li><a href="#" class="no-smoothstate" target="blank"><i class="icon icon-spotify"></i></a></li>
+			</ul>
+		</div>
+	</aside>
 </section>
 
 {% include footer.html %}

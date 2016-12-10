@@ -1,7 +1,11 @@
 .header {
     padding: 20px 0;
     background-color: color(element);
-    height: 64px;
+    height: 110px;
+
+    @media(min-width: 500px) {
+        height: 64px;
+    }
 
     .header__inner {
         @extend %container;

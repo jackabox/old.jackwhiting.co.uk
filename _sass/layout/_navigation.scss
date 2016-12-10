@@ -35,3 +35,20 @@
         }
     }
 }
+
+.social {
+    li {
+        display: inline-block;
+        margin-right: 15px;
+        a, a:visited {
+            color: color(font);
+        }
+        a:hover, a:focus {
+            color: color(link);
+        }
+        .icon {
+            font-size: 24px;
+         
+        }
+    }
+}

@@ -10,7 +10,8 @@ h5 {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
 	font-family: $font-family-header;
 	margin: 0;
 	font-weight: 600;
@@ -20,7 +21,6 @@ h1, h2 {
 	padding: 0;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	// font-weight: 600;
 }
 
 h1 {
@@ -31,16 +31,22 @@ h1 {
 h2 {
 	font-size: 2.8rem;
 	margin: 0 0 30px;
-	padding: 0;
 }
 
 h3 {
 	font-size: 2.4rem;
+	margin-bottom: 20px;	
 }
 
 h4 {
 	font-size: 1.9rem;
 	margin-bottom: 10px;
+}
+
+h5 {
+	font-size: 1.5rem;
+	margin-bottom: 10px;
+	color: color(font);	
 }
 
 p,
@@ -68,6 +74,20 @@ a {
 	text-decoration: none;
 	color: color(link);
 	transition: .3s all ease-in-out;
+}
+
+b, strong {
+	font-weight: 600;
+}
+
+em {
+	font-style: italic;
+}
+
+sup {
+	vertical-align: super;
+    font-size: 1.2rem;
+	color: red;
 }
 
 .text-center {

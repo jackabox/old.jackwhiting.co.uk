@@ -5,7 +5,12 @@
 
     &.hero--home {
         overflow: hidden;
-        height: calc(100vh - 64px);
+        height: 450px;
+        height: calc(100vh - 110px);
+        
+        @media(min-width: 500px) {
+            height: calc(100vh - 64px);
+        }
     }
 
     img {

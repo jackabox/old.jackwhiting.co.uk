@@ -1,14 +1,38 @@
 .container {
     @extend %container;
     padding: 0 15px;
+
     @media (min-width: 768px) {
         margin-top: 60px;
-        margin-bottom: 20px;
+        margin-bottom: 20px;  
+        display: flex;
+        justify-content: space-between;
     }
-    &.container--intro {
-        h1,
-        p {
-            max-width: $max-width-inner;
+
+    .content {
+        width: 100%;
+        max-width: $max-width-inner;     
+    }
+
+    .sidebar {
+        margin-top: 30px;
+
+        @media (min-width: 420px) {
+            & > div {
+                float: left;
+                width: 48.5%;
+            }
+        }
+
+        @media (min-width: 768px) {
+            width: 220px;
+            margin-left: 30px;
+            margin-top: 0;
+
+            & > div {
+                float: none;
+                width: 100%;
+            }
         }
     }
 }
