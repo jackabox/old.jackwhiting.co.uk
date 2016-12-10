@@ -28,6 +28,6 @@ Hole Hearted were looking to move from their Big Cartel platform and provide a m
 
 The site was built on [WordPress](http://wordpress.org) and [WooCommerce](http://woocommerce.com). They were chosen to remove as much expense from the site as possible for the client. 
 
-The main focus of the site was the products and how their customers loved them. Big promotional images were put on the home page, a lookbook section was created to show location shoots, and the client got some proffesional studio shoots so that the images were consistant and of a high standard to really push the brand.
+The main focus of the site was the products and how their customers loved them. Big promotional images were put on the home page, a lookbook section was created to show location shoots, and the client got some professional studio shoots so that the images were consistent and of a high standard to really push the brand.
 
 Overall the client has seen an increase in sales and with some SEO work will see more increases later down the line.

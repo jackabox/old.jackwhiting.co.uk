@@ -5,4 +5,4 @@ tags:
 title: "Contact"
 permalink: /contact/
 ---
-This is the example blurb which will go before the contact form and provide a little context to the page so that the user knows what to do and what this is for. It’s merely a point to get in enquiries.
+Want to talk about your next project or just discuss some ideas you have? You can use the contact form below to send me an email or feel free to reach out to me on one of my social platforms.

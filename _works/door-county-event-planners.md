@@ -17,8 +17,6 @@ tags:
 - services
 - reviews
 ---
-Door County Event Planners wanted a website which showed off their character and allowed people to truly understand the passion they put into their event planning. 
+Door County Event Planners wanted a website which showed off their character and allowed people to truly understand the passion they put into their event planning.
 
-Built using WordPress as a base, this site was aimed to deliver brief information about what services they provide and reviews from their customers. 
-
-We also included galleries which helped capture the moments of some of DCEPs events.
+Built using WordPress as a base, this site was aimed to deliver brief information about what services they provide and reviews from their customers. I also included galleries which helped capture the moments of some of the DCEP's events.

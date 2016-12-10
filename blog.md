@@ -5,4 +5,4 @@ excerpt:
 tags:
 permalink: /blog/
 ---
-I write tutorials, share snippets snippets and discuss useful tools. Here you can see what I’ve shared over the years.
+Here you can see what I’ve shared over the years. I tend to write tutorials, share snippets and discuss useful tools. Every now and then I'll talk about how I live with Crohn's Disease and how it affects my work. 
