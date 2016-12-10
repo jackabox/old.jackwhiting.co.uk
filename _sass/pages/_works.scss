@@ -97,11 +97,7 @@
 		@media (min-width: 768px) {
 			width: 600px;			
 			order: 2;
-		}
-
-		img {
-			max-width: 100%;
-			height: auto;
+			padding-right: 20px;		
 		}
 	}
 }
@@ -111,5 +107,15 @@
 		@media(min-width: 768px) {
 			padding-top: 78px;
 		}
+	}
+}
+
+.work-images {
+	@extend %container;
+	padding: 0 15px;
+
+	img {
+		margin-bottom: 40px;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.15);
 	}
 }

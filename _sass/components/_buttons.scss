@@ -1,6 +1,7 @@
 .button {
 	padding: 9px 16px;
 	background-color: color(link);
+	border: none;
 	color: color(white);
 	font-weight: bold;
 	font-size: 1.4rem;
@@ -11,5 +12,6 @@
 	&:hover,
 	&:focus {
 		background-color: color(element);
+		cursor: pointer;
 	}
 }
