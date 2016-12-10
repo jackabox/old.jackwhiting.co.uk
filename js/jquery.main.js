@@ -4,7 +4,7 @@ $(function () {
 		$overlay = $('.loading-overlay'),
 		options = {
 			debug: true,
-
+			forms: '.smoothstate-form',
 			onStart: {
 				duration: 1000,
 				render: function ($container) {
