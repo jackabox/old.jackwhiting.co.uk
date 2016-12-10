@@ -13,8 +13,6 @@ navigation:
     url: /about/
   - title: Work
     url: /work/
-  - title: Blog
-    url: /blog/
   - title: Contact
     url: /contact/
 email: hi@jackwhiting.co.uk

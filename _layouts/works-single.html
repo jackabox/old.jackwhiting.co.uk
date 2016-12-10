@@ -2,35 +2,31 @@
 	
 	{% assign check = post.content | strip_newlines %}
 	{% if check != nil %}
-	<div class="single container">
-		<div class="content">
-			<div class="work-single">
-				<div class="work-single__description">
-					{{ content }}
-				</div>
+	<div class="single-work container">
+		<div class="content">	
+			<h1>{{ page.title }}</h1>
+			{{ content }}
+		</div>
 
-				<div class="work-single__meta">
-					<div class="meta__date">
-						<h4>Date:</h4>
-						<p>{{ page.date | date: "%b %-d, %Y" }}</p>
-					</div>
-
-					<div class="meta__categories">
-						<h4>Categories:</h4>
-						<p>
-						{% for category in page.categories %}
-							<span>{{ category }}</span>
-						{% endfor %}
-						</p>
-					</div>
-				</div>
-
-				{% if page.link != null %}
-					<div class="work-single__link">
-						<p><a href="{{ page.link }}" title="Link to {{ page.title }}" target="_blank" class="button">View Online</a></p>
-					</div>
-				{% endif %}
+		<div class="sidebar">
+			<div class="meta__date">
+				<h5>Date:</h5>
+				<p>{{ page.date | date: "%b %-d, %Y" }}</p>
 			</div>
+
+			<div class="meta__categories">
+				<h5>Categories:</h5>
+				<p>
+				{% for category in page.categories %}
+					<span>{{ category }}</span><br>
+				{% endfor %}
+				</p>
+			</div>
+			{% if page.link != null %}
+				<div class="work-single__link">
+					<p><a href="{{ page.link }}" title="Link to {{ page.title }}" target="_blank" class="button">View Online</a></p>
+				</div>
+			{% endif %}
 		</div>
 	</div>
 	{% endif %}

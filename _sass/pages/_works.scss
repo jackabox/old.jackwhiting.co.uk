@@ -101,3 +101,11 @@
 		}
 	}
 }
+
+.single-work {
+	.sidebar {
+		@media(min-width: 768px) {
+			padding-top: 78px;
+		}
+	}
+}
