@@ -10,13 +10,13 @@ collections:
     output: true
 navigation:
   - title: About
-    url: /about/
+    url: /about
   - title: Work
-    url: /work/
+    url: /work
   - title: Blog
     url: http://blog.jackwhiting.co.uk
   - title: Contact
-    url: /contact/
+    url: /contact
 email: hi@jackwhiting.co.uk
 baseurl: 
 url: https://jackwhiting.co.uk
