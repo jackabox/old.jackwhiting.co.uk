@@ -1,0 +1,103 @@
+.works {
+	justify-content: space-between;
+	display: flex;
+	flex-flow: wrap;
+
+	@media (min-width: 768px) {
+		display: block;
+	}
+}
+
+.work-item {
+	width: 100%;
+	margin-bottom: 60px;
+	background: color(panel);
+
+	@media (min-width: 650px) and (max-width: 767px) {
+		width: 48%;
+	}
+
+	@media (min-width: 768px) {	
+		display: flex;
+	}
+
+	@media (min-width: 860px) {
+		height: 420px;	
+	}
+	
+	
+	a:not(.button) {
+		color: color(element);
+	}
+
+	h3 a:hover,
+	h3 a:focus {
+		color: color(link);
+	}
+
+	@media (min-width: 860px) {
+		&:nth-child(2n) {
+			background: color(element);
+
+			a:not(.button) {
+				color: color(white);
+			}
+
+			h3 a:hover,
+			h3 a:focus {
+				color: color(link);
+			}
+
+			p {
+				color: #ccc;
+			}
+
+			.button:hover,
+			.button:focus {
+				background: color(white);
+				color: color(element);
+			}
+		}
+	}
+
+	&__info {
+		width: 100%;
+		padding: 20px;
+		@media (min-width: 768px) {
+			order: 1;
+			padding: 20px 40px 20px 20px;		
+		}
+
+		@media(min-width: 860px) {
+			max-width: calc(100% - 420px);		
+			padding: 40px 60px 40px 40px;	
+		}
+	}
+
+	@media (min-width: 768px) {
+		&__text,
+		&__image img {
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+
+	.icon {
+		font-size: 30px;
+	}
+
+	&__image {
+		position: relative;
+
+		@media (min-width: 768px) {
+			width: 600px;			
+			order: 2;
+		}
+
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+}

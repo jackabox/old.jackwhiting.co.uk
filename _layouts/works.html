@@ -10,20 +10,21 @@
 <section class="container works">
 	{% assign works = (site.works | sort: 'date') | reverse %}
 	{% for work in works %}
-		<article class="work-item animated slideInUp {{ work.color }}">
-			<div class="image">
+		<article class="work-item">
+			<div class="work-item__image">
 				<a href="{{ work.url }}" title="Link to {{ work.title | escape }}"><img src="/assets/works/{{ work.thumbnail }}" alt=""></a>
+			</div>	
+
+			<div class="work-item__info">
+				<div class="work-item__text">
+					<p><i class="icon icon-code"></i><p>
+					<h3><a href="{{ work.url }}" title="Link to {{ work.title | escape }}">{{ work.title | escape }}</a></h3>
+					{{ work.excerpt }}
+					<p><a href="{{ work.url }}" title="Link to {{ work.title | escape }}" class="button">View Work</a></p>
+				</div>
 			</div>
-			
-			<h3><a href="{{ work.url }}" title="Link to {{ work.title | escape }}">{{ work.title | escape }}</a></h3>
 
-			{% for category in work.categories %}
-				<span>{{ category }}</span>
-			{% endfor %}
-
-			{{ work.excerpt }}
-				
-			<p><a href="{{ work.url }}" title="Link to {{ work.title | escape }}" class="button">View Work</a></p>
+					
 		</article>
 	{% endfor %}
 </section>
