@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: contact
 excerpt:
 tags:
 title: "Contact"
