@@ -12,6 +12,10 @@
 	width: 100%;
 	margin-bottom: 60px;
 	background: color(panel);
+	transition: .3s;
+	&:hover {
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    }
 
 	@media (min-width: 650px) and (max-width: 767px) {
 		width: 48%;
