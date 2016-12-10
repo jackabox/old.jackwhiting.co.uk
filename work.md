@@ -2,7 +2,7 @@
 layout: works
 title: Work
 peramlink: /work/
-excerpt: Here are a few selected pieces I've worked on over the years. Click on one to read a little bit more about it and the process I was involved in.
+excerpt: Over my time as a Web Designer, I've worked on my any projects for clients. These include building WordPress, Shopify, and Laravel sites.
 tags: 
 - work
 - freelance

@@ -1,18 +1,16 @@
 ---
 layout: front
 peramlink: /
-excerpt: Jack Whiting is a product designer and developer from Nottingham, UK. Working with many companies over the last 10 years doing web design, UI/UX design and front-end development.
+excerpt: I'm a 24-year-old product designer from Nottingham, UK. Available for Freelance Work in Web Design, UI/UX and Front-End Development.
 tags:
-- developer
-- web
-- designer
-- ui
-- ux
-- product
+- web design
+- product design
 - nottingham
 - freelance
 - portfolio
 - jack whiting
 - jackabox
+- wordpress
+- shopify
 ---
 
