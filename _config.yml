@@ -24,3 +24,4 @@ sass:
   style: compressed
 gems:
   - jekyll-sitemap
+  - octopress-autoprefixer
