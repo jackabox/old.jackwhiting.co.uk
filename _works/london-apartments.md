@@ -31,4 +31,4 @@ Property pages were built to provide details to the user, as well as near by loc
 
 The design was created by a colleague at [Adtrak](http://adtrak.co.uk) to implement the property location search.
 
-After everything was built and tested, we included some rich meta elements to provide better search results in Google. Then the site was cached to reduce load on the database from multiple requests.
+After everything was built and tested, we included some rich meta elements to provide better search results in Google. Then the site was cached to reduce the load on the database from multiple requests.
