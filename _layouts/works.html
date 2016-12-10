@@ -1,26 +1,32 @@
 {% include header.html %}
 
-	<div class="work container">
-		<div class="works">
-			{% assign works = (site.works | sort: 'date') | reverse %}
-			{% for work in works %}
-				<article class="work-item animated slideInUp {{ work.color }}">
-					<div class="image">
-						<a href="{{ work.url }}" title="Link to {{ work.title | escape }}"><img src="/assets/works/{{ work.thumbnail }}" alt=""></a>
-					</div>
-  					
-  					<h3><a href="{{ work.url }}" title="Link to {{ work.title | escape }}">{{ work.title | escape }}</a></h3>
-  
-					{% for category in work.categories %}
-						<span>{{ category }}</span>
-					{% endfor %}
-
-					{{ work.excerpt }}
-  						
-					<p><a href="{{ work.url }}" title="Link to {{ work.title | escape }}" class="button">View Work</a></p>
-  				</article>
-			{% endfor %}
-		</div>
+<div class="work container">
+	<div class="content">
+		<h1>{{ page.title }}</h1>
+		{{ content }}
+		<!--<p><a href="#" class="button">Download My C.V.</a></p>-->
 	</div>
+</div>
+
+<section class="container worklist">
+	{% assign works = (site.works | sort: 'date') | reverse %}
+	{% for work in works %}
+		<article class="work-item animated slideInUp {{ work.color }}">
+			<div class="image">
+				<a href="{{ work.url }}" title="Link to {{ work.title | escape }}"><img src="/assets/works/{{ work.thumbnail }}" alt=""></a>
+			</div>
+			
+			<h3><a href="{{ work.url }}" title="Link to {{ work.title | escape }}">{{ work.title | escape }}</a></h3>
+
+			{% for category in work.categories %}
+				<span>{{ category }}</span>
+			{% endfor %}
+
+			{{ work.excerpt }}
+				
+			<p><a href="{{ work.url }}" title="Link to {{ work.title | escape }}" class="button">View Work</a></p>
+		</article>
+	{% endfor %}
+</section>
 
 {% include footer.html %}
