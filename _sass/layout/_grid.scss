@@ -1,9 +1,14 @@
 .container {
-	@extend %container;
-	padding: 0 15px;
-
-	@media (min-width: 768px) {
-		margin-top: 60px;
-		margin-bottom: 20px;
-	}
+    @extend %container;
+    padding: 0 15px;
+    @media (min-width: 768px) {
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+    &.container--intro {
+        h1,
+        p {
+            max-width: $max-width-inner;
+        }
+    }
 }

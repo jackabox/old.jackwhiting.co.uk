@@ -1,7 +1,16 @@
 {% include header.html %}
 
-<div id="main" role="main" class="about container">
-    <article class="entry">
+{% include header.html %}
+
+<div class="container container--intro">
+	<div class="content">
+		<h1>{{ page.title }}</h1>
+		{{ content }}
+	</div>
+</div>
+
+<section class="container worklist">
+	<article class="entry">
     	{% if page.image.feature %}<img src="{{ site.url }}/images/{{ page.image.feature }}" class="entry-feature-image" alt="{{ page.title }}" {% if site.logo == null %}style="margin-top:0;"{% endif %}>{% if page.image.credit %}<p class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></p>{% endif %}{% endif %}
     	
     	<div class="entry-wrapper">
@@ -12,6 +21,6 @@
       		</div><!-- /.entry-content -->
     	</div><!-- /.entry-wrapper -->
   	</article>
-</div><!-- /#main -->
+</section>
 
 {% include footer.html %}

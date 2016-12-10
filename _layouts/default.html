@@ -1,22 +1,21 @@
 {% include header.html %}
 
-	<div class="about container">
-		<div class="content">
-
-    <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-    </ul>
-    
-			{{ content }}
-		</div>
+<div class="container container--intro">
+	<div class="content">
+		<h1>{{ page.title }}</h1>
+		{{ content }}
 	</div>
+</div>
+
+<ul class="post-list">
+    {% for post in site.posts %}
+    <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <h2>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
+        </h2>
+    </li>
+    {% endfor %}
+</ul> 
 
 {% include footer.html %}
