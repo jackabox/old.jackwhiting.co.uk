@@ -1,7 +1,7 @@
 ---
 layout: works
 title: Work
-peramlink: /work/
+peramlink: /work
 excerpt: Over my time as a Web Designer, I've worked on my any projects for clients. These include building WordPress, Shopify, and Laravel sites.
 tags: 
 - work
