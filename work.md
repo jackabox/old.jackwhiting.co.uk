@@ -15,6 +15,4 @@ tags:
 - ui
 - ux
 ---
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet ipsa molestiae expedita, ratione totam ipsam laboriosam ex obcaecati aperiam architecto, sunt voluptatum cum doloremque explicabo. Quis ratione cupiditate nulla!
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quibusdam, delectus reprehenderit. Sunt voluptate rerum ab ipsum hic ipsam ad minus, adipisci, saepe laborum libero incidunt fugit quam cupiditate quidem aliquam deserunt similique possimus vitae qui eos tempora neque eveniet. Asperiores sequi labore, animi maiores doloribus laborum non aspernatur mollitia.
+This is the example blurb which will go before the contact form and provide a little context to the page so that the user knows what to do and what this is for. It’s merely a point to get in enquiries.
