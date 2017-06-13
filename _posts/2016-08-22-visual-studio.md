@@ -1,7 +1,20 @@
 ---
-title: "Tools: Visual Studio Code (and 5  Recommended Extensions)"
+title: "Using Visual Studio Code (with 5  Recommended Extensions)"
 layout: post
-permalink: /tools-visual-studio-code
+permalink: /visual-studio-code-and-five-extensions
+excerpt: "A break down of Visual Studio Code with five recommended extensions to get you up and running when moving from Sublime or Atom."
+tags: 
+  - Web Development
+  - Editors
+  - Tools
+  - Web Design
+  - Visual Studio
+  - Sublime
+  - Atom
+categories: 
+  - Web Development 
+  - Tools
+feature: visual-studio.jpg
 ---
 I constantly toy with which IDE/Text Editor I want to use in my workflow. I’ve tried six or seven in the last few months to find something that fits my personal work flow and always ended up reverting to [Sublime Text 3](https://www.sublimetext.com/).
 

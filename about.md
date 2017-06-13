@@ -14,6 +14,6 @@ tags:
 - wordpress
 - shopify
 ---
-Hello, my name is Jack Whiting, a 24-year-old Product and Web Designer. Currently based in Nottingham, United Kingdom. I work for Adtrak but I am also available for freelance work.
+Hello, my name is Jack Whiting, a 25-year-old Web Designer & Developer. Currently based in Nottingham, United Kingdom. I am <a href="{{ site.url }}/contact" title="Contact Me for Work">available for freelance consultancy</a> on Websites & Web Applications.
 
-I take pride in building custom solutions which solve an individual or companies problem. The majority of my time is spent between agency work, freelancing and side projects. I pride myself on building websites which function well, have great design, simplicity and speed. I use WordPress, Laravel and Shopify to build easily accessible websites.
+I take pride in building custom solutions which solve real world problems. The majority of my time is spent between agency work, freelancing and side projects. I build websites and applications which function, have great design, and provide simplicity and speed to the user. I use WordPress, Laravel and Shopify to provide the right solution for your project.

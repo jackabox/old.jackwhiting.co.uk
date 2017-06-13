@@ -7,15 +7,12 @@
 	</div>
 </div>
 
-<ul class="post-list">
+<ul class="container posts">
     {% for post in site.posts %}
-    <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <h2>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
+    <li class="post__item">
+        <div class="post__date">{{ post.date|date: '%b %Y' }}</div> <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
     </li>
     {% endfor %}
-</ul> 
+</ul>
 
 {% include footer.html %}

@@ -6,7 +6,7 @@ $(function () {
 			debug: true,
 			forms: '.smoothstate-form',
 			onStart: {
-				duration: 1000,
+				duration: 600,
 				render: function ($container) {
 					$container.addClass('is-exiting');
 					$overlay.fadeIn().addClass('active');
@@ -15,7 +15,7 @@ $(function () {
 				}
 			},
 			onReady: {
-				duration: 750,
+				duration: 400,
 				render: function ($container, $newContent) {
 					$container.removeClass('is-exiting');		
 					$container.html($newContent);
@@ -29,5 +29,7 @@ $(function () {
 	
 	setTimeout(function(){
         $overlay.removeClass('active');
-    }, 3000);
+    }, 1000);
+
+	hljs.initHighlightingOnLoad();
 });

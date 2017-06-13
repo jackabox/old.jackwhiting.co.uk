@@ -1,19 +1,32 @@
 {% include header.html %}
 
-{% include header.html %}
+{% if page.feature %}<img src="{{ site.url }}/assets/images/blog/{{ page.feature }}" class="entry-feature-image" alt="{{ page.title }}" {% if site.logo == null %}style="margin-top:-60px; margin-bottom: 30px;"{% endif %}>{% if page.image.credit %}<p class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></p>{% endif %}{% endif %}
 
-<section class="container">
+<section class="container container--single">
+	<h1 class="entry__title">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}{% endif %}</h1>
 	<article class="entry">
-    	{% if page.image.feature %}<img src="{{ site.url }}/images/{{ page.image.feature }}" class="entry-feature-image" alt="{{ page.title }}" {% if site.logo == null %}style="margin-top:0;"{% endif %}>{% if page.image.credit %}<p class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></p>{% endif %}{% endif %}
-    	
-    	<div class="entry-wrapper">
-			<h2 class="entry-title">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}{% endif %}</h2>
-      		
-      		<div class="entry-content">
-        		{{ content }}
-      		</div><!-- /.entry-content -->
-    	</div><!-- /.entry-wrapper -->
-  	</article>
+		<div class="entry__wrapper">
+			<div class="entry-content">
+				{{ content }}
+			</div>
+		</div>
+	</article>
+
+	<aside class="sidebar sidebar--single">
+		<div class="meta__date">
+			<h5>Date</h5>
+			<p>{{ page.date | date: "%b %-d, %Y" }}</p>
+		</div>
+
+		<div class="meta__categories">
+			<h5>Categories</h5>
+			<p>
+			{% for category in page.categories %}
+				<span>{{ category }}</span><br>
+			{% endfor %}
+			</p>
+		</div>
+	</aside>
 </section>
 
 {% include footer.html %}

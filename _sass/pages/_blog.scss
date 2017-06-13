@@ -1,0 +1,33 @@
+.posts {
+	width: 100%;
+	display: block;
+
+	.post__item {
+		display: flex;
+		flex-flow: row;
+		margin-bottom: 30px;
+	}
+
+	.post__date {
+		width: 120px;
+		font-weight: bold;
+	}
+
+	h3 {
+		margin: 0;
+		padding: 0;
+		line-height: 1;
+	}
+}
+
+.entry__wrapper {
+	max-width: 768px;
+}
+
+.container--single {
+	flex-flow: row wrap;
+}
+
+.entry__title {
+	width: 100%;
+}
