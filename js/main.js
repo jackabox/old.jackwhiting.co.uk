@@ -31,4 +31,9 @@ $(function () {
         $overlay.removeClass('active');
     }, 1000);
 
+	$(document).ready(function() {
+		$('pre code').each(function(i, block) {
+    		hljs.highlightBlock(block);
+  		});
+	});
 });
