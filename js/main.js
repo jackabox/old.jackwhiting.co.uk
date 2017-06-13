@@ -1,5 +1,5 @@
 $(function () {
-	'use strict';
+
 	var $body = $('html, body'),
 		$overlay = $('.loading-overlay'),
 		options = {
@@ -32,7 +32,7 @@ $(function () {
     }, 1000);
 
 	$(document).ready(function() {
-		$('pre code').each(function(i, block) {
+		$('pre > code').each(function(i, block) {
     		hljs.highlightBlock(block);
   		});
 	});
