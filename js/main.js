@@ -31,5 +31,4 @@ $(function () {
         $overlay.removeClass('active');
     }, 1000);
 
-	hljs.initHighlightingOnLoad();
 });
