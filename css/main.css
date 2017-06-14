@@ -521,7 +521,7 @@ h4 {
   margin-bottom: 10px; }
 
 h5 {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   margin-bottom: 10px;
   color: #747982; }
 
@@ -852,21 +852,28 @@ form {
   width: 100%;
   display: block; }
   .posts .post__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row;
-            flex-flow: row;
     margin-bottom: 30px; }
+    @media (min-width: 678px) {
+      .posts .post__item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row;
+                flex-flow: row; } }
   .posts .post__date {
-    width: 120px;
     font-weight: bold; }
+    @media (min-width: 678px) {
+      .posts .post__date {
+        width: 120px; } }
   .posts h3 {
     margin: 0;
     padding: 0;
     line-height: 1; }
+    @media (min-width: 678px) {
+      .posts h3 {
+        max-width: calc(100% - 120px); } }
 
 .entry__wrapper {
   max-width: 768px; }

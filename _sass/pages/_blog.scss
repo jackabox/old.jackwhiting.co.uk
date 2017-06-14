@@ -3,20 +3,30 @@
 	display: block;
 
 	.post__item {
-		display: flex;
-		flex-flow: row;
+
+		@media(min-width: 678px) {
+			display: flex;
+			flex-flow: row;
+		}
 		margin-bottom: 30px;
 	}
 
 	.post__date {
-		width: 120px;
 		font-weight: bold;
+
+		@media(min-width: 678px) {
+			width: 120px;
+		}		
 	}
 
 	h3 {
 		margin: 0;
 		padding: 0;
 		line-height: 1;
+
+		@media(min-width: 678px) {
+			max-width: calc(100% - 120px);
+		}
 	}
 }
 
