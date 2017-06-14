@@ -30,8 +30,17 @@
 	}
 }
 
-.entry__wrapper {
+.entry {
 	max-width: 768px;
+	width: 100%;
+
+	@media (min-width: 768px) {
+		width: calc(100% - 220px);		
+	}
+
+	@media (min-width: 1000px) {
+		width: calc(100% - 250px);
+	}
 }
 
 .container--single {

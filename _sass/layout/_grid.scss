@@ -25,7 +25,7 @@
         }
 
         @media (min-width: 768px) {
-            width: 220px;
+            width: 180px;
             margin-left: 30px;
             margin-top: 0;
 
@@ -33,6 +33,10 @@
                 float: none;
                 width: 100%;
             }
+        }
+
+        @media (min-width: 1000px) {
+            width: 220px;
         }
     }
 }

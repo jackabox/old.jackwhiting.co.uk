@@ -585,12 +585,15 @@ sup {
         width: 48.5%; } }
     @media (min-width: 768px) {
       .container .sidebar {
-        width: 220px;
+        width: 180px;
         margin-left: 30px;
         margin-top: 0; }
         .container .sidebar > div {
           float: none;
           width: 100%; } }
+    @media (min-width: 1000px) {
+      .container .sidebar {
+        width: 220px; } }
 
 .header {
   padding: 20px 0;
@@ -875,8 +878,15 @@ form {
       .posts h3 {
         max-width: calc(100% - 120px); } }
 
-.entry__wrapper {
-  max-width: 768px; }
+.entry {
+  max-width: 768px;
+  width: 100%; }
+  @media (min-width: 768px) {
+    .entry {
+      width: calc(100% - 220px); } }
+  @media (min-width: 1000px) {
+    .entry {
+      width: calc(100% - 250px); } }
 
 .container--single {
   -webkit-box-orient: horizontal;
