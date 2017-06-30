@@ -1,7 +1,12 @@
 .header {
     padding: 20px 0;
-    background-color: color(element);
+    background-color: color('background');
     height: 110px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
 
     @media(min-width: 500px) {
         height: 64px;
@@ -10,7 +15,7 @@
     .header__inner {
         @extend %container;
         padding: 0 15px;
-        
+
         @media (min-width: 500px) {
             display: flex;
         }
@@ -25,7 +30,7 @@
     margin: 3px 0 0;
 
     @media (min-width: 500px) {
-        width: 35%;    
+        width: 35%;
     }
 
     h1 {

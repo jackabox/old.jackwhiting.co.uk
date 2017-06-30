@@ -3,12 +3,12 @@
 	display: block;
 
 	.post__item {
+        margin-bottom: 30px;
 
 		@media(min-width: 678px) {
 			display: flex;
 			flex-flow: row;
 		}
-		margin-bottom: 30px;
 	}
 
 	.post__date {
@@ -16,7 +16,8 @@
 
 		@media(min-width: 678px) {
 			width: 120px;
-		}		
+            line-height: 1.2;
+		}
 	}
 
 	h3 {
@@ -35,7 +36,7 @@
 	width: 100%;
 
 	@media (min-width: 768px) {
-		width: calc(100% - 220px);		
+		width: calc(100% - 220px);
 	}
 
 	@media (min-width: 1000px) {

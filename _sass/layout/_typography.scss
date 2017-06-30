@@ -4,7 +4,7 @@ h3,
 h4,
 h5 {
 	font-weight: 300;
-	color: color(element);
+	color: color('header');
 }
 
 h1,
@@ -36,7 +36,7 @@ h2 {
 
 h3 {
 	font-size: 2.4rem;
-	margin-bottom: 20px;	
+	margin-bottom: 20px;
 }
 
 h4 {
@@ -47,7 +47,7 @@ h4 {
 h5 {
 	font-size: 1.6rem;
 	margin-bottom: 10px;
-	color: color(font);	
+	color: color(font);
 }
 
 p,
@@ -55,6 +55,11 @@ ul {
 	font-size: 1.8rem;
 	line-height: 1.7;
 	margin: 0 0 20px;
+
+	@media (min-width: 968px) {
+		font-size: 2rem;
+		line-height: 1.8;
+	}
 }
 
 ul li {
