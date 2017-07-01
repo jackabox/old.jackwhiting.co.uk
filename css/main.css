@@ -929,4 +929,8 @@ form {
 
 .entry__title {
   width: 100%; }
+
+.entry-feature-image {
+  margin-top: -25px;
+  margin-bottom: 30px; }
 /*# sourceMappingURL=main.css.map */

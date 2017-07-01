@@ -1,6 +1,6 @@
 {% include header.html %}
 
-{% if page.feature %}<img src="{{ site.url }}/assets/images/blog/{{ page.feature }}" class="entry-feature-image" alt="{{ page.title }}" {% if site.logo == null %}style="margin-top:-60px; margin-bottom: 30px;"{% endif %}>{% if page.image.credit %}<p class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></p>{% endif %}{% endif %}
+{% if page.feature %}<img src="{{ site.url }}/assets/images/blog/{{ page.feature }}" class="entry-feature-image" alt="{{ page.title }}" {% if site.logo == null %}style=""{% endif %}>{% if page.image.credit %}<p class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></p>{% endif %}{% endif %}
 
 <section class="container container--single">
 	<h1 class="entry__title">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}{% endif %}</h1>
