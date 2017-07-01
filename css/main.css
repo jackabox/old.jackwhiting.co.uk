@@ -457,7 +457,8 @@ html {
 
 body {
   font: normal normal 1.6rem/1.4 "Roboto", "Arial", "Lucida Grande", "sans-serif";
-  color: #313131; }
+  color: #313131;
+  padding-top: 110px; }
   @media (min-width: 500px) {
     body {
       padding-top: 54px; } }
