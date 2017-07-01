@@ -13,10 +13,10 @@ html {
 body {
     font: normal normal 1.6rem/1.4 $font-family;
     color: color(font);
-    padding-top: 110px;
+    padding-top: 120px;
 
     @media(min-width: 500px) {
-        padding-top: 54px;
+        padding-top: 74px;
     }
 }
 
