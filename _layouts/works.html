@@ -7,26 +7,48 @@
 	</div>
 </div>
 
+<section class="career">
+	<h2 class="container">Career</h2>
+
+	<div class="career__row container">
+		<div class="career__box">
+			<h3>Adtrak LLP</h3>
+			<p class="career__role">Web Developer</p>
+			<p class="career__date">Mid 2015 - Now</p>
+		</div>
+		<div class="career__box">
+			<h3>Freelance</h3>
+			<p class="career__role">WordPress Developer</p>
+			<p class="career__date">Late 2011 - 2017</p>
+		</div>
+		<div class="career__box">
+			<h3>Northumbria Uni</h3>
+			<p class="career__role">1st Class BSc Hons</p>
+			<p class="career__date">Late 2010 - 2014</p>
+		</div>
+	</div>
+</section>
+
 <section class="container works">
-	{% assign works = (site.works | sort: 'date') | reverse %}
-	{% for work in works %}
-		<article class="work-item">
-			<div class="work-item__image">
-				<a href="{{ work.url }}" title="Link to {{ work.title | escape }}"><img src="/assets/works/{{ work.thumbnail }}" alt=""></a>
-			</div>	
+	<div>
+		<h2>Works</h2>
+		<ul class="work__list">
+			<li><a href="http://rollerdor.net" target="_blank">Rollerdor</a></li>
+			<li><a href="https://holehearted.co" target="_blank">Hole Hearted</a> <span>(<a href="/works/hole-hearted">Case Study</a>)</span></li>
+			<li><a href="http://findlondonapartments.com" target="_blank">London Apartments</a> <span>(<a href="/works/london-apartments">Case Study</a>)</span></li>
+			<li>Crohn's Tracker <span>(<a href="/works/crohns-tracker">Case Study</a>)</span></li>
+			<li><a href="http://www.krugercowne.com/risingstar/" target="_blank">Rising Star Programme</a> <span>(<a href="/works/rising-star-programme">Case Study</a>)</span></li>
+			<li><a href="http://doorcountyevents.com/" target="_blank">Door County Event Planners</a> <span>(<a href="/works/door-county-event-planners">Case Study</a>)</span></li>
+		</ul>
+	</div>
 
-			<div class="work-item__info">
-				<div class="work-item__text">
-					<p><i class="icon icon-code"></i><p>
-					<h3><a href="{{ work.url }}" title="Link to {{ work.title | escape }}">{{ work.title | escape }}</a></h3>
-					{{ work.excerpt }}
-					<p><a href="{{ work.url }}" title="Link to {{ work.title | escape }}" class="button">View Work</a></p>
-				</div>
-			</div>
-
-					
-		</article>
-	{% endfor %}
+	<div>
+		<h2>Projects</h2>
+		<ul class="work__list">
+			<li>WordPress Activity Logger</li>
+			<li><em>More Soon</em></li>
+		</ul>
+	</div>
 </section>
 
 {% include footer.html %}

@@ -1,105 +1,50 @@
-.works {
-	justify-content: space-between;
-	display: flex;
-	flex-flow: wrap;
-
-	@media (min-width: 768px) {
-		display: block;
-	}
+.career__date {
+    font-size: 1.6rem;
+    font-style: italic;
 }
 
-.work-item {
-	width: 100%;
-	margin-bottom: 60px;
-	background: color(panel);
-	transition: .3s;
-	&:hover {
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+.career__role {
+    font-weight: 500;
+    color: color(link);
+    margin: -20px 0 0;
+}
+
+.career__box {
+    @media(min-width: 560px) {
+        // width: 32%;
+    }
+}
+
+.career__row {
+  margin-top: 15px;
+
+  @media (min-width: 620px) {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  @media (min-width: 768px) {
+     margin-top: 0;
+  }
+}
+
+.works {
+    margin-top: 30px;
+
+    @media (min-width: 620px) {
+        display: flex;
+        justify-content: flex-start;
+
+        div {
+            width: 50%;
+        }
     }
 
-	@media (min-width: 650px) and (max-width: 767px) {
-		width: 48%;
-	}
+    @media (min-width: 768px) {
+        margin-top: 70px;
+    }
 
-	@media (min-width: 768px) {	
-		display: flex;
-	}
 
-	@media (min-width: 860px) {
-		// height: 420px;	
-	}
-	
-	
-	a:not(.button) {
-		color: color(element);
-	}
-
-	h3 a:hover,
-	h3 a:focus {
-		color: color(link);
-	}
-
-	@media (min-width: 860px) {
-		&:nth-child(2n) {
-			background: color(element);
-
-			a:not(.button) {
-				color: color(white);
-			}
-
-			h3 a:hover,
-			h3 a:focus {
-				color: color(link);
-			}
-
-			p {
-				color: #ccc;
-			}
-
-			.button:hover,
-			.button:focus {
-				background: color(white);
-				color: color(element);
-			}
-		}
-	}
-
-	&__info {
-		width: 100%;
-		padding: 20px;
-		@media (min-width: 768px) {
-			order: 1;
-			padding: 20px 40px 20px 20px;		
-		}
-
-		@media(min-width: 860px) {
-			max-width: calc(100% - 420px);		
-			padding: 40px 60px 40px 40px;	
-		}
-	}
-
-	@media (min-width: 768px) {
-		&__text,
-		&__image img {
-			position: relative;
-			top: 50%;
-			transform: translateY(-50%);
-		}
-	}
-
-	.icon {
-		font-size: 30px;
-	}
-
-	&__image {
-		position: relative;
-
-		@media (min-width: 768px) {
-			width: 600px;			
-			order: 2;
-			padding-right: 20px;		
-		}
-	}
 }
 
 .single-work {
@@ -118,4 +63,15 @@
 		margin-bottom: 40px;
 		box-shadow: 0 1px 3px rgba(0,0,0,0.15);
 	}
+}
+
+.work__list {
+    li, a {
+        color: color(font);
+    }
+    span a,
+    a:hover,
+    a:focus {
+        color: color(link);
+    }
 }
