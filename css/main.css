@@ -259,7 +259,7 @@ table {
   content: "\e92d"; }
 
 pre, code {
-  font-family: monospace; }
+  font-family: monospace !important; }
 
 code {
   background: #232323;
