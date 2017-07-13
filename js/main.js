@@ -6,7 +6,7 @@ $(function () {
 			debug: true,
 			forms: '.smoothstate-form',
 			onStart: {
-				duration: 600,
+				// duration: 600,
 				render: function ($container) {
 					$container.addClass('is-exiting');
 					$overlay.fadeIn().addClass('active');
@@ -15,7 +15,7 @@ $(function () {
 				}
 			},
 			onReady: {
-				duration: 400,
+				// duration: 400,
 				render: function ($container, $newContent) {
 					$container.removeClass('is-exiting');		
 					$container.html($newContent);
