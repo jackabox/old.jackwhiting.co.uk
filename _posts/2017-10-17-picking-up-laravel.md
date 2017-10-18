@@ -1,7 +1,7 @@
 ---
-title: Picking Up Laravel
+title: Picking Laravel Back Up
 layout: post
-permalink: /picking-up-laravel
+permalink: /picking-laravel-back-up
 excerpt: "Over the past few weeks I've finally got around to working with Laravel again. Oh, how happy I am!"
 tags: 
   - Web Development
