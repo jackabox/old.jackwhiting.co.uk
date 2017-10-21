@@ -1,5 +1,5 @@
 .cbox {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 
     @media (min-width: 768px) {
         display: flex;
@@ -19,8 +19,13 @@
         font-weight: 400;
         font-size: 1.8rem;
     }
+
+    p {
+        margin-bottom: 5px;
+    }
 }
 
 .cbox__content {
     width: 100%;
+    margin-bottom: 10px;
 }
