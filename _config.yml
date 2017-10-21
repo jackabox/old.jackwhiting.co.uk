@@ -15,15 +15,17 @@ navigation:
     url: /work
   - title: Blog
     url: /blog
-  - title: Contact
-    url: /contact
+  - title: Contact Me
+    url: 'mailto:hi@jackwhiting.co.uk?subject=Hi Jack'
 email: hi@jackwhiting.co.uk
-baseurl: 
+baseurl:
 url: https://jackwhiting.co.uk
 enforce_ssl: https://jackwhiting.co.uk
 markdown: kramdown
 sass:
+  sass_dir: _sass
   style: compressed
 gems:
   - jekyll-sitemap
   - octopress-autoprefixer
+  - jekyll-redirect-from

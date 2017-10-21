@@ -1,0 +1,26 @@
+.cbox {
+    margin-bottom: 30px;
+
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
+}
+
+.cbox__title {
+    @media (min-width: 768px) {
+        width: 280px;
+    }
+
+    line-height: 1.3;
+
+    h3 {
+        font-weight: 400;
+        font-size: 1.8rem;
+    }
+}
+
+.cbox__content {
+    width: 100%;
+}

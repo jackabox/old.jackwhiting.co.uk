@@ -3,52 +3,79 @@
 <div class="container container--intro">
 	<div class="content">
 		<h1>{{ page.title }}</h1>
-		{{ content }}
+        <div class="lead-message">{{ content }}</div>
 	</div>
 </div>
 
-<section class="career">
-	<h2 class="container">Career</h2>
+<section class="container">
+	<div class="cbox">
+        <div class="cbox__title">
+		    <h3>Select Websites</h3>
+        </div>
 
-	<div class="career__row container">
-		<div class="career__box">
-			<h3>Adtrak LLP</h3>
-			<p class="career__role">Lead Web Developer</p>
-			<p class="career__date">Mid 2015 - Now</p>
-		</div>
-		<div class="career__box">
-			<h3>Freelance</h3>
-			<p class="career__role">Web Developer</p>
-			<p class="career__date">Late 2011 - Now</p>
-		</div>
-		<div class="career__box">
-			<h3>Northumbria Uni</h3>
-			<p class="career__role">1st Class BSc Hons</p>
-			<p class="career__date">Late 2010 - 2014</p>
-		</div>
-	</div>
-</section>
+        <div class="cbox__content">
+            <ul class="item__list">
+                <li>
+                    <h4><a href="https://rawhalo.com" target="_blank">rawhalo.com</a></h4>
+                    <span>WooCommerce, Ecommerce, WordPress</span>
+                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> -->
+                </li>
+                <li>
+                    <h4><a href="https://mrtyre.com" target="_blank">mrtyre.com</a></h4>
+                    <span>WordPress, Bespoke Commerce, API Integration</span>
+                </li>
+                <li>
+                    <h4><a href="https://www.rollerdor.net" target="_blank">rollerdor.net</a></h4>
+                    <span>Laravel, WooCommerce, Ecommerce</span>
+                </li>
+                <li>
+                    <h4><a href="https://holehearted.co" target="_blank">holehearted.co</a></h4>
+                    <span>WooCommerce, Ecommerce, WordPress</span>
+                </li>
+                <li>
+                    <h4><a href="http://findlondonapartments.com" target="_blank">findlondonapartments.com</a></h4>
+                    <span>WordPress, Search Functionality</span>
+                </li>
+                <li>
+                    <h4><a href="http://www.krugercowne.com/risingstar/" target="_blank">risingstarprogramme.com</a></h4>
+                    <span>WordPress</span>
+                </li>
 
-<section class="container works">
-	<div>
-		<h2>Works</h2>
-		<ul class="work__list">
-			<li><a href="http://rollerdor.net" target="_blank">Rollerdor</a></li>
-			<li><a href="https://holehearted.co" target="_blank">Hole Hearted</a> <span>(<a href="/works/hole-hearted">Case Study</a>)</span></li>
-			<li><a href="http://findlondonapartments.com" target="_blank">London Apartments</a> <span>(<a href="/works/london-apartments">Case Study</a>)</span></li>
-			<li>Crohn's Tracker <span>(<a href="/works/crohns-tracker">Case Study</a>)</span></li>
-			<li><a href="http://www.krugercowne.com/risingstar/" target="_blank">Rising Star Programme</a> <span>(<a href="/works/rising-star-programme">Case Study</a>)</span></li>
-			<li><a href="http://doorcountyevents.com/" target="_blank">Door County Event Planners</a> <span>(<a href="/works/door-county-event-planners">Case Study</a>)</span></li>
-		</ul>
+    			<li>
+                    <h4><a href="http://doorcountyevents.com/" target="_blank">doorcountyevents.com</a></h4>
+                    <span>WordPress</span>
+                </li>
+    		</ul>
+        </div>
 	</div>
 
-	<div>
-		<h2>Projects</h2>
-		<ul class="work__list">
-			<li><a href="https://github.com/jackabox/admin-logger" target="_blank">WordPress Activity Logger</a></li>
-			<li><em>More Soon</em></li>
-		</ul>
-	</div>
+	<div class="cbox">
+        <div class="cbox__title">
+		    <h3>Select Projects</h3>
+        </div>
+
+        <div class="cbox__content">
+            <ul class="item__list">
+    			<li>
+                    <h4><a href="https://github.com/jackabox/admin-logger" target="_blank">WordPress Activity Logger</a></h4>
+                    <span>Provides a detailed changelog of admin activity within WordPress.</span>
+                </li>
+                <li>
+                    <h4><a href="/works/crohns-tracker">Crohn's Tracker</a></h4>
+                    <span>Laravel project to help people with Crohn's. Dissertation at university.</span>
+                </li>
+                <li>
+                    <h4><a href="https://github.com/getbilly" target="_blank">WP Plugin Framework</h4>
+                    <span>Fork &amp; Adaption of Herbert for use with personal plugins/Adtrak.</span>
+                </li>
+                <li>
+                    <h4><a href="http://skips.adtrakdev.com" target="_blank">WP Skip Hire Plugin</h4>
+                    <span>Plugin to add ability to find and purchase skips via WordPress/PayPal.</span>
+                </li>
+    		</ul>
+            <a href="https://github.com/jackabox">More on Github</a>
+    	</div>
+    </div>
 </section>
 
 {% include footer.html %}

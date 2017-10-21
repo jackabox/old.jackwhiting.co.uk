@@ -4,18 +4,12 @@
 
     @media (min-width: 768px) {
         margin-top: 60px;
-        margin-bottom: 20px;  
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .content {
-        width: 100%;
-        max-width: $max-width-inner;     
+        margin-bottom: 20px;
     }
 
     .sidebar {
         margin-top: 30px;
+        width: 100%;
 
         @media (min-width: 420px) {
             & > div {
@@ -24,9 +18,9 @@
             }
         }
 
-        @media (min-width: 768px) {
+        @media (min-width: 1000px) {
             width: 180px;
-            margin-left: 30px;
+            margin-left: 40px;
             margin-top: 0;
 
             & > div {
@@ -34,9 +28,14 @@
                 width: 100%;
             }
         }
+    }
+}
 
-        @media (min-width: 1000px) {
-            width: 220px;
-        }
+.container--intro {
+    margin-top: 40px;
+    margin-bottom: 80px;
+
+    @media (min-width: 768px) {
+        margin-top: 60px;
     }
 }

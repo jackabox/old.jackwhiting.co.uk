@@ -3,7 +3,7 @@
 	display: block;
 
 	.post__item {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
 
 		@media(min-width: 678px) {
 			display: flex;
@@ -11,33 +11,17 @@
 		}
 	}
 
-	.post__date {
-		font-weight: bold;
-
-		@media(min-width: 678px) {
-			width: 120px;
-            line-height: 1.2;
-		}
-	}
-
-	h3 {
-		margin: 0;
-		padding: 0;
-		line-height: 1;
-
-		@media(min-width: 678px) {
-			max-width: calc(100% - 120px);
-		}
-	}
+    h4 {
+        font-size: 1.8rem;
+        line-height: 1.3;
+        margin: -1px 0 5px;
+        font-weight: 600;
+    }
 }
 
 .entry {
-	max-width: 768px;
+	// max-width: 768px;
 	width: 100%;
-
-	@media (min-width: 768px) {
-		width: calc(100% - 220px);
-	}
 
 	@media (min-width: 1000px) {
 		width: calc(100% - 250px);
@@ -45,7 +29,12 @@
 }
 
 .container--single {
+    display: flex;
 	flex-flow: row wrap;
+
+    h5 {
+        font-weight: 600;
+    }
 }
 
 .entry__title {
@@ -53,6 +42,6 @@
 }
 
 .entry-feature-image {
-	margin-top: -25px;
-	margin-bottom: 30px;
+	margin-top: 20px;
+	// margin-bottom: 30px;
 }

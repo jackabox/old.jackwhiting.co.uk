@@ -3,16 +3,19 @@
 <div class="container container--intro">
 	<div class="content">
 		<h1>{{ page.title }}</h1>
-		{{ content }}
+		<div class="lead-message">{{ content }}</div>
 	</div>
 </div>
 
-<ul class="container posts">
+<div class="container posts">
     {% for post in site.posts %}
-    <li class="post__item">
-        <div class="post__date">{{ post.date|date: '%b %Y' }}</div> <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-    </li>
+    <div class="cbox post__item">
+        <div class="cbox__title">{{ post.date|date: '%b %Y' }}</div>
+        <div class="cbox__content">
+            <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+        </div>
+    </div>
     {% endfor %}
-</ul>
+</div>
 
 {% include footer.html %}

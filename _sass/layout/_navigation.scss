@@ -1,6 +1,6 @@
 .navigation {
-  @media (min-width: 500px) {
-    width: 65%;
+  @media (min-width: 550px) {
+    width: calc(100% - 100px);
     text-align: right;
   }
 
@@ -9,7 +9,7 @@
     margin: 10px -10px 0;
     line-height: 1.2;
 
-    @media (min-width: 500px) {
+    @media (min-width: 550px) {
       margin: 0;
     }
 

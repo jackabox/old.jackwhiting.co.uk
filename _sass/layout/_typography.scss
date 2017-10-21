@@ -14,13 +14,12 @@ h4,
 h5 {
 	font-family: $font-family-header;
 	margin: 0;
-	font-weight: 600;
+	font-weight: 400;
 }
 
 h1, h2 {
 	padding: 0;
-	text-transform: uppercase;
-	letter-spacing: 2px;
+	// text-transform: uppercase;
 }
 
 h1 {
@@ -52,14 +51,9 @@ h5 {
 
 p,
 ul {
-	font-size: 1.8rem;
-	line-height: 1.7;
+	font-size: 1.7rem;
+	line-height: 1.6;
 	margin: 0 0 20px;
-
-	@media (min-width: 968px) {
-		font-size: 2rem;
-		line-height: 1.8;
-	}
 }
 
 ul li {
@@ -80,6 +74,11 @@ a {
 	text-decoration: none;
 	color: color(link);
 	transition: .3s all ease-in-out;
+}
+
+a:hover,
+a:focus {
+    color: darken(color(link), 15%);
 }
 
 b, strong {

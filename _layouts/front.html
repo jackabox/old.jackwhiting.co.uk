@@ -1,14 +1,69 @@
 {% include header.html %}
 
-	<div class="hero hero--home">
-		<div class="content">
-			<p class="bounce animated lead-message">Hi, I'm a Freelance Web Designer &amp; Developer based in Nottingham, UK.</p>
-			<p class="bounce animated"><a href="/contact" title="Get In Touch / Contact" class="button">Get In Touch</a>
-		</div>
+<div class="container container--intro">
+	<div class="content">
+		<div class="lead-message">
+            <p>Hey there, my name is <b>Jack Whiting</b>. I'm a Web Developer in Nottingham, I work with clients to build functional and beautiful websites. I use WordPress, Laravel and Shopify.</p>
+		    <p><a href="mailto:hi@jackwhiting.co.uk?subject=Hi Jack" title="Get In Touch / Contact">I am available for Freelance. Why Not contact me?</a></p>
+        </div>
 	</div>
+</div>
 
-	<!--<div class="">
-		<p class="">Hello, my name is Jack Whiting, a 25-year-old Web Designer & Developer. Currently based in Nottingham, United Kingdom. I am <a href="{{ site.url }}/contact" title="Contact Me for Work">available for freelance consultancy</a> on Websites &amp; Web Applications.</p>
-		<p class="">Why don't you take a look at <a href="/work" title="Link to view my work">my work</a>, see what <a href="/about" title="Link to view my services">services I can provide</a> you, or read my latest <a href="/blog" title="Link to view my blog">blog posts</a>.</p>
-	</div>-->
+    <div class="container">
+        <div class="cbox">
+            <div class="cbox__title">
+                <h3>Recent Projects</h3>
+            </div>
+
+            <div class="cbox__content">
+                <ul class="item__list">
+                    <li>
+                        <h4><a href="https://rawhalo.com" target="_blank">rawhalo.com</a></h4>
+                        <span>WooCommerce, Ecommerce, WordPress</span>
+                    </li>
+                    <li>
+                        <h4><a href="https://mrtyre.com" target="_blank">mrtyre.com</a></h4>
+                        <span>WordPress, Bespoke Commerce, API Integration</span>
+                    </li>
+        			<li>
+                        <h4><a href="https://www.rollerdor.net" target="_blank">rollerdor.net</a></h4>
+                        <span>Laravel, WooCommerce, Ecommerce</span>
+                    </li>
+        			<li>
+                        <h4><a href="https://holehearted.co" target="_blank">holehearted.co</a></h4>
+                        <span>WooCommerce, Ecommerce, WordPress</span>
+                    </li>
+        			<li>
+                        <h4><a href="http://findlondonapartments.com" target="_blank">findlondonapartments.com</a></h4>
+                        <span>WordPress, Search Functionality</span>
+                    </li>
+        		</ul>
+
+                <a href="#">View All</a>
+            </div>
+        </div>
+
+        <div class="cbox">
+            <div class="cbox__title">
+                <h3>Recent Posts</h3>
+            </div>
+
+            <div class="cbox__content">
+                <ul class="item__list">
+                    {% assign count = 0 %}
+                    {% for post in site.posts %}
+                    {% assign count = count | plus:1 %}
+                    <li class="post__item">
+                        <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                        <span>{{ post.date|date: '%b %Y' }}</span>
+                        </li>
+                        {% if count == 2 %}{% break %}{% endif %}
+                    {% endfor %}
+        		</ul>
+
+                <a href="#">View All</a>
+            </div>
+        </div>
+    </div>
+
 {% include footer.html %}

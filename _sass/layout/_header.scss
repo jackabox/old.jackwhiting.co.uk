@@ -1,44 +1,33 @@
 .header {
     padding: 20px 0;
-    background-color: color('background');
-    height: 95px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 20;
-
-    @media(min-width: 500px) {
-        height: 64px;
-    }
+    background: white;
 
     .header__inner {
         @extend %container;
         padding: 0 15px;
 
-        @media (min-width: 500px) {
+        @media (min-width: 550px) {
             display: flex;
         }
     }
 
     a, a:visited {
-        color: color(white);
+        color: color('background');
     }
 }
 
 .logo {
     margin: 3px 0 0;
 
-    @media (min-width: 500px) {
-        width: 35%;
+    @media (min-width: 550px) {
+        width: 100px;
     }
 
     h1 {
         margin: 0;
-        font-weight: bold;
+        font-weight: 700;
         font-size: 2rem;
         line-height: 2rem;
         text-transform: uppercase;
-        letter-spacing: 2px;
     }
 }

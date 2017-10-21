@@ -1,84 +1,34 @@
 .hero {
-	background-color: #121212;
 	position: relative;
 
-	img {
-		position: absolute;
-		bottom: 0;
-		left: 50%;
-		transform: translateX(-40%);
-		width: auto;
-		height: 100%;
-		z-index: 2;
-	}
-
 	.content {
-		z-index: 4;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
 		padding: 0 15px;
 		@extend %container;
-		@media (min-width: 768px) {
-			padding: 30px 15px;
-		}
 
-		h1,
-		p {
-			color: color(white);
-			// max-width: 520px;
-		}
-
-		h1 {
-			margin-bottom: 20px;
-			line-height: 1.3;
+        @media (min-width: 768px) {
+			padding: 60px 15px 50px;
 		}
 	}
 }
 
-.hero--home {
-	overflow: hidden;
-	padding-top: 120px;
-	height: 100vh;
-	margin-top: -120px;
+.lead-message {
+	margin-bottom: 20px;
 
-	@media(min-width: 500px) {
-		padding-top: 74px;
-		height: 100vh;
-		margin-top: -74px;
-	}
+    p {
+        font-size: 1.9rem;
+        line-height: 1.7;
 
-	img {
-		max-width: none;
-	}
+        @media (min-width: 600px) {
+            font-size: 2.2rem;
+            line-height: 1.8;
+        }
+    }
+}
 
-	.lead-message {
-		max-width: 800px;
-		font-weight: 700;
-		margin-bottom: 20px;
-		font-size: 36px;
-		line-height: 1.3;
+.hero .button {
+	padding: 12px 18px;
 
-		@media(min-width: 500px) {
-			margin-bottom: 30px;
-			font-size: 45px;
-			line-height: 1.2;
-		}
-
-		@media(min-width: 800px) {
-			font-size: 70px;
-			line-height: 1.2;
-			margin-bottom: 40px;
-		}
-	}
-
-	.button {
-		background-color: #F8A2A6;
-		padding: 12px 18px;
-
-		@media(min-width: 800px) {
-			font-size: 19px;
-		}
+	@media(min-width: 800px) {
+		font-size: 19px;
 	}
 }

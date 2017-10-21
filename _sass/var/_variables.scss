@@ -1,15 +1,16 @@
-$max-width-outer: 1100px;
+$max-width-outer: 960px;
 $max-width-inner: 768px;
 
 $font-family: ('Roboto', 'Arial', 'Lucida Grande', 'sans-serif');
-$font-family-header: ('Rubik', 'Arial', 'Lucida Grande', 'sans-serif');
+// $font-family-header: ('Rubik', 'Arial', 'Lucida Grande', 'sans-serif');
+$font-family-header: ('Roboto', 'Arial', 'Lucida Grande', 'sans-serif');
 
 $color: (
 	white: #ffffff,
 	font: #313131,
-	link: #F39B9F,
+	link: #e84f89,
 	element: #1E242C,
 	panel: #EFEFEF,
-	'background': #121212,
+	'background': #212832,
 	'header': #121212,
 );
