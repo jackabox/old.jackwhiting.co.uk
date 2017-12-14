@@ -1,7 +1,7 @@
 ---
 title: Chrome 63 Forces Redirection of .dev Domains to HTTPS
 layout: post
-permalink: /chrome-63-forces-dev-to-https
+permalink: /chrome-63-forces-dev-domains-to-https
 excerpt: "Chrome 63 now forces all domains ending in .dev to be redirected to HTTPS and directly killed my local domains overnight."
 tags:
   - Chrome
