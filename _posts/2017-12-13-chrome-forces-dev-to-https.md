@@ -9,6 +9,9 @@ tags:
   - Valet
   - Web Development
   - redirect
+categories:
+  - Development
+  - Local Stack
 ---
 > Chrome 63 (out since December 2017), will force all domains ending on .dev (and .foo) to be redirected to HTTPS via a preloaded HTTP Strict Transport Security (HSTS) header.
 
