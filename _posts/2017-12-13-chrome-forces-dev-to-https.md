@@ -12,10 +12,10 @@ tags:
 ---
 > Chrome 63 (out since December 2017), will force all domains ending on .dev (and .foo) to be redirected to HTTPS via a preloaded HTTP Strict Transport Security (HSTS) header.
 
-As a long time user of .dev as a domain of choice for development work, waking up to find all my sites are being redirected to https:// caused me a massive pain. Thankfully, using Laravel Valet I was able to change the dnsmasq with ease to another domain (.test) by running
-
-```
-valet domain test
-```
-
 You can find out more about this change at [https://ma.ttias.be/chrome-force-dev-domains-https-via-preloaded-hsts/](https://ma.ttias.be/chrome-force-dev-domains-https-via-preloaded-hsts/)
+
+As long as I can remember, I've used .dev as a preference for local domains. It seemed like the industry standard and was recommend by a lot of developers. When I woke up to find all my .dev sites were being redirected to https://, I was disgruntled. 
+
+I painstakingly had to go and edit a vast amount of databases & files to update the domains that WordPress/Laravel used. Thankfully remapping my hosts took a fragment of the time as I'm using [Laravel Valet](https://laravel.com/docs/5.5/valet). A quick command in terminal (`valet domain test`) and dnsmasq was configured to use an alternative domain (.test).
+
+Now if only my brain can remember to type .test instead of .dev.
