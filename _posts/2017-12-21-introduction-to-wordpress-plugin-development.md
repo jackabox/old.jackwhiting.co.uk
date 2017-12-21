@@ -46,7 +46,7 @@ _Note: When you start to write plugins more often, you may use a framework which
 
 Every plugin requires a header. This allows WordPress to read the files and tells it how to interpret the code. The header of a plugin, similar to that of a theme, is a comment block at the top of our main plugin file.
 
-```php
+```
 /*
 Plugin Name: Adtrak Plugin
 Description: A quick excerpt about our plugin.
